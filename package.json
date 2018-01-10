@@ -1,0 +1,40 @@
+{
+  "name": "upshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./src/tests/*.test.js | tap-spec",
+    "nodemon": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fac-12/upShop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fac-12/upShop/issues"
+  },
+  "homepage": "https://github.com/fac-12/upShop#readme",
+  "devDependencies": {
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "istanbul": "^0.4.5",
+    "nodemon": "^1.14.10",
+    "supertest": "^3.0.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.8.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "env2": "^2.2.0",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "pg-promise": "^7.3.3",
+    "query-string": "^5.0.1",
+    "url": "^0.11.0"
+  }
+}
