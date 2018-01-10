@@ -9,4 +9,4 @@ const build = sql('./dbBuild.sql');
 db
   .query(build)
   .then(res => console.log('res', res))
-  .catcg(e => console.error('error', e));
+  .catch(e => console.error('error', e));

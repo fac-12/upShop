@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS places (
     id SERIAL PRIMARY KEY,
     name VARCHAR(200) NOT NULL,
     lat_long VARCHAR(50) NOT NULL,
-    hours VARCHAR(56) NOT NULL,
+    hours VARCHAR(77) NOT NULL,
     description VARCHAR(200) NOT NULL,
     created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
@@ -40,8 +40,8 @@ CREATE TABLE IF NOT EXISTS comments (
 
 CREATE TABLE IF NOT EXISTS votes (
     id SERIAL PRIMARY KEY,
-    user_id REFERENCES users(id),
-    place_id REFERENCES places(id)
+    user_id INT REFERENCES users(id),
+    place_id INT REFERENCES places(id)
 );
 
 CREATE TABLE IF NOT EXISTS standard_connections (
