@@ -51,4 +51,4 @@ Made on Figma and Invision
 
 ### Software Architecture
 ### Schema
-[schema](assets/schema.png)
+![](assets/schema.png)
