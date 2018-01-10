@@ -1,6 +1,6 @@
-# upShop
 
 # upShop ⬆️
+[![Join the chat at https://gitter.im/upShopChat/Lobby](https://badges.gitter.im/upShopChat/Lobby.svg)](https://gitter.im/upShopChat/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 _Add value to your next purchase_
 _Make every purchase count_
 
@@ -52,3 +52,4 @@ Made on Figma and Invision
 ### Software Architecture
 ### Schema
 ![](public/assets/schema.png)
+
