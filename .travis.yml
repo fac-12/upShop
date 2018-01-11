@@ -4,3 +4,11 @@ node_js:
 
 notifications:
   email: false
+
+services: [
+    postgresql
+  ],
+  before_script: [
+    psql -c 'create database travis_ci_test;' -U postgres
+  ]
+  
