@@ -1,0 +1,18 @@
+placeDetails.hbs
+<main>
+	<h2>{{ resName }}</h2>
+	<p>{{ resSite }}</p>
+	<p>{{ resDesc }}</p>
+	<img src="../../public/assets/droppin-grey.png">{{ resAddress }}
+	<img src="../public/assets/clock.png">Hours
+	<div class="times"> {{ resTimes }}</div>
+</main>
+
+<section class="values">
+	<h3>Values</h3>
+	<ul>
+	{{#each resValues }}
+		<li> {{ resValue}} </li>
+	{{/each }}
+
+</section>

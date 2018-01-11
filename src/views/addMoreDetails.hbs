@@ -1,0 +1,51 @@
+
+<div class="placeDetails">
+	<p> {{ placeName }} </p>
+	<p> {{ placeStreet }} </p>
+	<p> {{ placePostcode }} </p>
+</div>
+
+<form class="moreDetails" method="GET" action="/add/details?">
+
+	Category:<br>
+ 		 <input type="checkbox" name="clothes" value="clothes">
+   	 <label for="clothes">Clothes</label>
+   		 <input type="checkbox" name="barsandrestaurants" value="barsandrestaurants">
+   	 <label for="barsandrestaurants">Bars & Restaurants</label>
+   	 	 <input type="checkbox" name="cafés" value="cafés">
+   	 <label for="cafés">Cafés</label>
+   	  	 <input type="checkbox" name="Groceries" value="Groceries">
+   	 <label for="Groceries">Groceries</label>
+   	 	  <input type="checkbox" name="Entertainment" value="Entertainment">
+   	 <label for="Entertainment">Entertainment</label>
+   	 	  <input type="checkbox" name="Other" value="Other">
+   	 <label for="Other">Other</label>
+
+  	Description:<br>
+  	<input type="text" name="description">
+
+	Values:<br>
+ 		 <input type="checkbox" name="Organic" value="Organic">
+   	 <label for="Organic">Organic</label>
+   		 <input type="checkbox" name="Eco" value="Eco">
+   	 <label for="Eco">Eco</label>
+   	 	 <input type="checkbox" name="Livingwage" value="Livingwage">
+   	 <label for="Livingwage">Living Wage</label>
+   	  	 <input type="checkbox" name="Veg*n" value="Veg*n">
+   	 <label for="Veg*n">Veg*n</label>
+   	 	  <input type="checkbox" name="Fairtrade" value="Fairtrade">
+   	 <label for="Fairtrade">Fairtrade</label>
+   	 	  <input type="checkbox" name="Non-profit" value="Non-profit">
+   	 <label for="Non-profit">Non-profit</label>
+   	     <input type="checkbox" name="Socialenterprise" value="Socialenterprise">
+   	 <label for="Socialenterprise">Social Enterprise</label>
+   	     <input type="checkbox" name="Bulkbins" value="Bulkbins">
+   	 <label for="Bulkbins">Bulk bins available</label>
+   	     <input type="checkbox" name="Tacklingwaste" value="Tacklingwaste">
+   	 <label for="Tacklingwaste">Tackling waste</label>
+
+  	Comment:<br>
+  	<input type="text" name="description">
+
+  	<input type="submit" name="submit">Submit
+ </form>
