@@ -1,0 +1,11 @@
+<main class="listResults">
+    {{#each resultsArr}}
+        <section class="results">
+          <img class="resultImg" src={{ resImg }}></img>
+          <p>{{ resName }}</p>
+          <p>{{ resDistance }}</p>
+          <p>{{ resStatus }}</p>
+          <i class="fa fa-arrow-circle-up" aria-hidden="true">{{ resVotes }}</i>
+    	</section>
+      {{/each}}
+</main>
