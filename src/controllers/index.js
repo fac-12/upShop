@@ -1,7 +1,10 @@
 const router = require('express').Router();
+const home = require('./home');
+const search = require('./search');
+const category = require('./category');
 
-router.get('/', (req, res) => {
-	res.render('home');
-})
+router.get('/', home.get);
+router.get('/search', search.get);
+router.get('/search/:category');
 
 module.exports = router;
