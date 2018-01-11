@@ -5,6 +5,7 @@ DROP TABLE IF EXISTS places, users, standards, categories, comments, votes, stan
 CREATE TABLE IF NOT EXISTS places (
     id SERIAL PRIMARY KEY,
     name VARCHAR(200) NOT NULL,
+    address VARCHAR(200) NOT NULL,
     lat_long VARCHAR(50) NOT NULL,
     postcode VARCHAR(10) NOT NULL,
     website VARCHAR(500),
@@ -60,7 +61,7 @@ CREATE TABLE IF NOT EXISTS category_connections (
 
 
 /*insert some dummy data here */
-INSERT INTO places (name, lat_long, postcode, website, hours, description) VALUES ('Second Shot', '[51.5274670760541, -0.0573554623770449]', 'E2 9QH', 'www.facebook.com/secondshotcoffee/','[0800-1700, 0800-1700, 0800-1700, 0800-1700, 0800-1700, 0900-1700, 0900-1700]', 'Second Shot coffee is the East London cafe bringing people together by tackling homelessness one espesso at a time');
+INSERT INTO places (name, address, lat_long, postcode, website, hours, description) VALUES ('Second Shot', '475 Bethnal Green Rd', '[51.5274670760541, -0.0573554623770449]', 'E2 9QH', 'www.facebook.com/secondshotcoffee/','[0800-1700, 0800-1700, 0800-1700, 0800-1700, 0800-1700, 0900-1700, 0900-1700]', 'Second Shot coffee is the East London cafe bringing people together by tackling homelessness one espesso at a time');
 
 INSERT INTO users (username, email) VALUES ('Steve', 'stevebuscemi@gmail.com');
 
