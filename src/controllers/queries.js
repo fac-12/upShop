@@ -6,6 +6,11 @@ const catResults = (category) => {
 
 }
 
+const getPlace = name => {
+return db.query('SELECT * FROM places WHERE name = $1', [name]);
+}
+
 module.exports = {
   catResults,
+  getPlace,
 };

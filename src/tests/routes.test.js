@@ -2,15 +2,16 @@ const test = require('tape');
 const request = require('supertest');
 const app = require('../app');
 
-const endpoints = ['/', 
+const endpoints = ['/',
 				   '/search',
-				   '/search/:category', 
+				   '/search/:category',
 				   'search/:category/:place',
 				   '/search/:category/list',
-				   '/search/:category/list/:place', 
-				   '/add', 
-				   '/add/exists', 
-				   '/add/details', 
+				   '/search/:category/list/:place',
+				   '/add',
+					 '/add/checkExists'
+				   '/add/exists',
+				   '/add/details',
 				   'add/details/success'];
 
 endpoints.forEach(endpoint => {
