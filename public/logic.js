@@ -13,5 +13,5 @@ categoryBtnArr.forEach(button => {
     	Other: 6
     }
     window.location.href='/search/'+ catObj[e.target.textContent];
-})
-})
+ })
+});

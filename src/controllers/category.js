@@ -10,13 +10,15 @@ exports.get = (req,res) => {
 //query db with "cat" & location
 queries
     .catResults(cat)
+    .catch((err) => {
+      console.log("here1");
+      console.log(err);
+    })
     .then(resultsArr => {
+      console.log("here2")
+      console.log("resultsarr", resultsArr);
       res.render('listView', {
           resultsArr, layout: 'list',
         });
     })
-    .catch((err) => {
-      console.log(err);
-    })
-//render 'category results';
 };

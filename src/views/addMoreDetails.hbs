@@ -1,11 +1,8 @@
+<form class="moreDetails" method="GET" action="/add/details">
 
-<div class="placeDetails">
-	<p> {{ placeName }} </p>
-	<p> {{ placeStreet }} </p>
-	<p> {{ placePostcode }} </p>
-</div>
-
-<form class="moreDetails" method="GET" action="/add/details?">
+   <input class="displayNone" type="textarea" name="name" value={{ placeObj.name }}> {{ placeObj.name }} 
+   <input class="displayNone" type="textarea" name="address" value={{ placeObj.address }}> {{ placeObj.address }}
+   <input class="displayNone" type="textarea" name="postcode" value={{ placeObj.postcode }}> {{ placeObj.postcode }}
 
 	Category:<br>
  		 <input type="checkbox" name="clothes" value="clothes">
@@ -47,5 +44,5 @@
   	Comment:<br>
   	<input type="text" name="description">
 
-  	<input type="submit" name="submit">Submit
+  	<input type="submit" name="submit" id="addDetailsBtn">Submit
  </form>
