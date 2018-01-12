@@ -4,7 +4,6 @@ var categoryBtnArr = Array.from(categoryBtn);
 
 categoryBtnArr.forEach(button => {
   button.addEventListener('click', function(e){
-  	console.log(e.target.value)
     var catObj = {
     	Clothes: 1,
     	'Bars and Restaurants': 2,
