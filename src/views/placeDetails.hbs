@@ -1,17 +1,18 @@
 <main>
-	<h2>{{ resName }}</h2>
-	<p>{{ resSite }}</p>
-	<p>{{ resDesc }}</p>
-	<img src="/assets/droppin-grey.png">{{ resAddress }}
+	<h2>{{ placeResults.name }}</h2>
+	<p>{{ placeResults.website }}</p>
+	<p>{{ placeResults.description }}</p>
+	<img src="/assets/droppin-grey.png">{{ placeResults.address }}
 	<img src="/assets/clock.png">Hours
 	<div class="times"> {{ resTimes }}</div>
 </main>
 
 <section class="values">
 	<h3>Values</h3>
+	<p></p>
 	<ul>
-	{{#each resValues }}
-		<li> {{ resValue}} </li>
+	{{#each values }}
+		<li> {{ this.standards }} </li>
 	{{/each }}
 
 </section>
