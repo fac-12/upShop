@@ -14,6 +14,5 @@ router.get('/search/:category/:place', place.get);
 router.get('/add', add.get)
 router.get('/checkExists', checkExists.get);
 router.get('/add/details', addDetails.get);
-// router.get('/add/checkExists'; 
 
 module.exports = router;
