@@ -49,3 +49,17 @@ test('testing checkPlace query returns true', (t) => {
   });
 });
 
+test('testing checkPlace query returns false', (t) => {
+  runDbBuild((err, res) => {
+    const testObj = {
+      name: 'Second Shot',
+      address: '475 Bethnal Green Rd',
+      postcode: 'E2 9AA',
+    };
+
+    queries.checkPlace(testObj).then((res) => {
+      t.deepEquals(Object.values(res[0]), ['0'], 'response should return false (0)');
+      t.end();
+    });
+  });
+});
