@@ -1,11 +1,17 @@
 <main class="listResults">
+	{{#if resultsArr}}
     {{#each resultsArr}}
         <section class="results">
           <img class="resultImg" src={{ resImg }}></img>
-          <p>{{ resName }}</p>
-          <p>{{ resDistance }}</p>
-          <p>{{ resStatus }}</p>
+          <p>{{ name }}</p>
+          <p>{{ lat_long }}</p>
+          <p>{{ hours }}</p>
           <i class="fa fa-arrow-circle-up" aria-hidden="true">{{ resVotes }}</i>
     	</section>
       {{/each}}
+    {{else}}
+    <div class="messageBox">
+		<h2>Sorry, there's no businesses in this category yet!.</h2>
+	</div>
+	{{/if}}
 </main>
