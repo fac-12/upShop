@@ -6,17 +6,17 @@ require('env2')('config.env');
 let DB_URL = process.env.DATABASE_URL;
 
 if (process.env.TRAVIS === true) {
-	
+
 	options = {
 		database: 'travis_ci_test'
 	}
 }
 
-if (process.env.NODE_ENV === 'test') {
+else if (process.env.NODE_ENV === 'test') {
   DB_URL = process.env.DB_URLTEST;
 }
 
-if (!DB_URL) {
+else if (!DB_URL &&  process.env.TRAVIS === false) {
   throw new Error('Environment variable DATABASE_URL must be set');
 }
 
