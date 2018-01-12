@@ -3,8 +3,6 @@ const queries = require('./queries');
 
 
 exports.get = (req,res) => {
-
-  console.log(req.params)
   const cat = req.params.category;
 
   // const location = req.params.location;
@@ -13,7 +11,6 @@ exports.get = (req,res) => {
 queries
     .catResults(cat)
     .then(resultsArr => {
-      console.log(resultsArr);
       res.render('listView', {
           resultsArr, layout: 'list',
         });
