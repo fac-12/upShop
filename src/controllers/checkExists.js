@@ -1,15 +1,16 @@
 const queries = require('./queries');
 
 exports.get = (req, res) => {
+
   const placeObj = {
-    placeName: req.body.name,
-    placeAddress: req.body.address,
-    placePostcode: req.body.postcode,
-  };
+    name: req.query.name,
+    address: req.query.address, 
+    postcode: req.query.postcode
+  }
 
   queries.checkPlace(placeObj)
     .then((x) => {
-      if (x.rows === 0) {
+      if (x[0].case == 0) {
         res.render('addMoreDetails', {
           placeObj, layout: 'navHome',
         });
