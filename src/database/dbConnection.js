@@ -4,6 +4,14 @@ require('env2')('config.env');
 
 
 let DB_URL = process.env.DATABASE_URL;
+
+if (process.env.TRAVIS === true) {
+	
+	options = {
+		database: 'travis_ci_test'
+	}
+}
+
 if (process.env.NODE_ENV === 'test') {
   DB_URL = process.env.DB_URLTEST;
 }
