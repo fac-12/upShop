@@ -11,6 +11,8 @@ if (process.env.TRAVIS === true) {
 	options = {
 		database: 'travis_ci_test'
 	}
+
+	module.exports = pgp(options);
 }
 
 else if (!DB_URL &&  process.env.TRAVIS === false) {
@@ -38,7 +40,8 @@ if (password) { options.password = password; }
 
 options.ssl = (options.host !== 'localhost');
 
+module.exports = pgp(options);
+
 }
 
 
-module.exports = pgp(options);
