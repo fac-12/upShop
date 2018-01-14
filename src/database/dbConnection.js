@@ -12,16 +12,15 @@ if (process.env.TRAVIS === true) {
 		database: 'travis_ci_test'
 	}
 
-	module.exports = pgp(options);
-}
-
-else if (!DB_URL &&  process.env.TRAVIS === false) {
-  throw new Error('Environment variable DATABASE_URL must be set');
 }
 
 else {
 
-	if (process.env.NODE_ENV === 'test') {
+	 if (!DB_URL &&  process.env.TRAVIS === false) {
+  throw new Error('Environment variable DATABASE_URL must be set');
+}
+
+	else if (process.env.NODE_ENV === 'test') {
   		DB_URL = process.env.DB_URLTEST;
   	}
 
@@ -40,8 +39,9 @@ if (password) { options.password = password; }
 
 options.ssl = (options.host !== 'localhost');
 
+}
+
 module.exports = pgp(options);
 
-}
 
 
