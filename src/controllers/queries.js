@@ -18,7 +18,7 @@ const getPlace = (name) => {
 
 //still need to add hours and check comments is ok
 const addPlace = (formData) => {
-  return db.query(`INSERT INTO places (name, address, lat_long, postcode, website, description) VALUES ($1, $2, $3, $4, $5, $6, $7 AND INSERT INTO comments VALUES ($8)`, [formData.name, formData.address, formData.lat_long, formData.postcode, formData.website, formData.description, formData.comment])
+  return db.query(`INSERT INTO places (name, address, lat_long, postcode, website, description) VALUES ($1, $2, $3, $4, $5, $6, $7) AND INSERT INTO comments VALUES ($8)`, [formData.name, formData.address, formData.lat_long, formData.postcode, formData.website, formData.description, formData.comment])
 }
 
 module.exports = {
