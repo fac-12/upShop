@@ -3,7 +3,7 @@
     {{#each resultsArr}}
         <section class="results">
           <img class="resultImg" src={{ resImg }}></img>
-          <p>{{ name }}</p>
+          <p><a href = '/place/{{ name }}'>{{ name }}</a></p>
           <p>{{ lat_long }}</p>
           <p>{{ hours }}</p>
           <i class="fa fa-arrow-circle-up" aria-hidden="true">{{ resVotes }}</i>

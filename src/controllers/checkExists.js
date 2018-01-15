@@ -4,7 +4,7 @@ exports.get = (req, res) => {
 
   const placeObj = {
     name: req.query.name,
-    address: req.query.address, 
+    address: req.query.address,
     postcode: req.query.postcode
   }
 
@@ -16,7 +16,7 @@ exports.get = (req, res) => {
         });
       } else {
         res.render('businessExists', {
-          layout: 'navHomeBack',
+          layout: 'navHome',
         });
       }
     })
