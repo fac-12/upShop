@@ -1,3 +1,8 @@
 .displayNone {
 	display: none;
 }
+
+.icon{
+	height: 100px;
+	width: auto;
+}
