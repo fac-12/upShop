@@ -1,6 +1,5 @@
 const queries = require('./queries');
 const fetch = require('isomorphic-fetch');
-// require('es6-promise').polyfill();
 
 exports.get = (req, res) => {
 
