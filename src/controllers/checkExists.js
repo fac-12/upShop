@@ -20,10 +20,6 @@ fetch(`http://api.postcodes.io/postcodes/${pc}`)
         )
 
 
-
-
-
-
   queries.checkPlace(placeObj)
     .then((x) => {
       if (x[0].case == 0) {
