@@ -3,9 +3,10 @@
    <input class="displayNone" type="textarea" name="name" value={{ placeObj.name }}> {{ placeObj.name }}
    <input class="displayNone" type="textarea" name="address" value={{ placeObj.address }}> {{ placeObj.address }}
    <input class="displayNone" type="textarea" name="postcode" value={{ placeObj.postcode }}> {{ placeObj.postcode }}
+   <input class="displayNone" type="textarea" name="lat_long" value={{ placeObj.lat_long}}> {{ placeObj.lat_long }}
 
 <label for="website">Website</label>
-<input type="text" name="website">
+<input type="url" name="website">
 
 <h3>Opening Hours</h3>
 <label for="mondayo">Monday</label>
@@ -39,17 +40,17 @@
 
 
 	<h3>Category:</h3><br>
- 		 <input type="radio" name="value" value="clothes">
+ 		 <input type="radio" name="category" value="clothes">
    	 <label for="clothes">Clothes</label>
-   		 <input type="radio" name="value" value="barsandrestaurants">
+   		 <input type="radio" name="category" value="barsandrestaurants">
    	 <label for="barsandrestaurants">Bars & Restaurants</label>
-   	 	 <input type="radio" name="value" value="cafés">
+   	 	 <input type="radio" name="category" value="cafés">
    	 <label for="cafés">Cafés</label>
-   	  	 <input type="radio" name="value" value="Groceries">
+   	  	 <input type="radio" name="category" value="Groceries">
    	 <label for="Groceries">Groceries</label>
-   	 	  <input type="radio" name="value" value="Entertainment">
+   	 	  <input type="radio" name="category" value="Entertainment">
    	 <label for="Entertainment">Entertainment</label>
-   	 	  <input type="radio" name="value" value="Other">
+   	 	  <input type="radio" name="category" value="Other">
    	 <label for="Other">Other</label>
 
   	<h3>Description:</h3><br>
@@ -75,8 +76,8 @@
    	     <input type="checkbox" name="Tacklingwaste" value="Tacklingwaste">
    	 <label for="Tacklingwaste">Tackling waste</label>
 
-  	Comment:<br>
-  	<input type="text" name="description">
+  	<h3>Comment:</h3><br>
+  	<input type="text" name="comment">
 
-  	<input type="submit" name="submit">Submit
+  	<input type="submit" name="Submit">
  </form>

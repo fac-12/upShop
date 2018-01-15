@@ -1,12 +1,28 @@
 const queries = require('./queries');
+const fetch = require('isomorphic-fetch');
 
 exports.get = (req, res) => {
 
   const placeObj = {
     name: req.query.name,
     address: req.query.address,
-    postcode: req.query.postcode
-  }
+    postcode: req.query.postcode,
+    lat_long: '',
+  };
+
+  const pc = encodeURI(req.query.postcode);
+
+fetch(`http://api.postcodes.io/postcodes/${pc}`)
+    .then(response => response.json()
+        )
+          .then(data =>
+        placeObj.lat_long = [data.result.latitude, data.result.longitude]
+        )
+
+
+
+
+
 
   queries.checkPlace(placeObj)
     .then((x) => {
