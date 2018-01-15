@@ -25,6 +25,7 @@ else {
   	}
 
   const params = url.parse(DB_URL);
+  console.log(params);
   const [username, password] = params.auth.split(':');
 
 	options = {
