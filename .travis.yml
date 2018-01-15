@@ -9,3 +9,8 @@ before_script:
   
 notifications:
  -  email: false
+
+env:
+  global:
+     - TRAVIS=true 
+     - NODE_ENV=test
