@@ -1,27 +1,61 @@
 <form class="moreDetails" method="GET" action="/add/details">
 
-   <input class="displayNone" type="textarea" name="name" value={{ placeObj.name }}> {{ placeObj.name }} 
+   <input class="displayNone" type="textarea" name="name" value={{ placeObj.name }}> {{ placeObj.name }}
    <input class="displayNone" type="textarea" name="address" value={{ placeObj.address }}> {{ placeObj.address }}
    <input class="displayNone" type="textarea" name="postcode" value={{ placeObj.postcode }}> {{ placeObj.postcode }}
 
-	Category:<br>
- 		 <input type="checkbox" name="clothes" value="clothes">
+<label for="website">Website</label>
+<input type="text" name="website">
+
+<h3>Opening Hours</h3>
+<label for="mondayo">Monday</label>
+<input type="time" name="mondayo">
+<input type="time" name="mondayc">
+
+<label for="tueso">Tuesday</label>
+<input type="time" name="tueso">
+<input type="time" name="tuesc">
+
+<label for="wedso">Wednesday</label>
+<input type="time" name="wedso">
+<input type="time" name="wedsc">
+
+<label for="thurso">Thursday</label>
+<input type="time" name="thurso">
+<input type="time" name="thursc">
+
+<label for="frio">Friday</label>
+<input type="time" name="frio">
+<input type="time" name="fric">
+
+<label for="sato">Saturday</label>
+<input type="time" name="sato">
+<input type="time" name="satc">
+
+<label for="monday">Sunday</label>
+<input type="time" name="suno">
+<input type="time" name="sunc">
+
+
+
+	<h3>Category:</h3><br>
+ 		 <input type="radio" name="value" value="clothes">
    	 <label for="clothes">Clothes</label>
-   		 <input type="checkbox" name="barsandrestaurants" value="barsandrestaurants">
+   		 <input type="radio" name="value" value="barsandrestaurants">
    	 <label for="barsandrestaurants">Bars & Restaurants</label>
-   	 	 <input type="checkbox" name="cafés" value="cafés">
+   	 	 <input type="radio" name="value" value="cafés">
    	 <label for="cafés">Cafés</label>
-   	  	 <input type="checkbox" name="Groceries" value="Groceries">
+   	  	 <input type="radio" name="value" value="Groceries">
    	 <label for="Groceries">Groceries</label>
-   	 	  <input type="checkbox" name="Entertainment" value="Entertainment">
+   	 	  <input type="radio" name="value" value="Entertainment">
    	 <label for="Entertainment">Entertainment</label>
-   	 	  <input type="checkbox" name="Other" value="Other">
+   	 	  <input type="radio" name="value" value="Other">
    	 <label for="Other">Other</label>
 
-  	Description:<br>
+  	<h3>Description:</h3><br>
   	<input type="text" name="description">
 
-	Values:<br>
+	<h3>Values:</h3><br>
  		 <input type="checkbox" name="Organic" value="Organic">
    	 <label for="Organic">Organic</label>
    		 <input type="checkbox" name="Eco" value="Eco">
