@@ -11,12 +11,9 @@ exports.get = (req,res) => {
 queries
     .catResults(cat)
     .catch((err) => {
-      console.log("here1");
       console.log(err);
     })
     .then(resultsArr => {
-      console.log("here2")
-      console.log("resultsarr", resultsArr);
       res.render('listView', {
           resultsArr, layout: 'list',
         });

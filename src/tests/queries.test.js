@@ -25,10 +25,10 @@ test('testing catResults query is returning an object', (t) => {
   });
 });
 
-test('testing catResults query is returning an object with length 4', (t) => {
+test('testing catResults query is returning an object with length 11', (t) => {
   runDbBuild((err, res) => {
     queries.catResults('3').then((res) => {
-      t.equals(Object.keys(res[0]).length, 4, 'Object contains 4 keys');
+      t.equals(Object.keys(res[0]).length, 11, 'Object contains 11 keys');
       t.end();
     });
   });
