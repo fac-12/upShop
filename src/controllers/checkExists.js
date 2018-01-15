@@ -33,7 +33,7 @@ fetch(`http://api.postcodes.io/postcodes/${pc}`)
         });
       } else {
         res.render('businessExists', {
-          layout: 'navHomeBack',
+          layout: 'navHome',
         });
       }
     })
