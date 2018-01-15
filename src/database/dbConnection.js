@@ -25,7 +25,6 @@ else {
   	}
 
   const params = url.parse(DB_URL);
-  console.log(params);
   const [username, password] = params.auth.split(':');
 
 	options = {
@@ -43,6 +42,3 @@ options.ssl = (options.host !== 'localhost');
 }
 
 module.exports = pgp(options);
-
-
-

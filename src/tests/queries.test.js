@@ -12,7 +12,7 @@ const endpoints = ['/',
            '/search/:category',
            '/place/:place',
            '/add',
-           '/add/checkExists',
+           '/checkExists',
            '/add/details'
            ];
 

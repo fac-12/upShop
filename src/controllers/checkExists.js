@@ -1,7 +1,7 @@
 const queries = require('./queries');
 
 exports.get = (req, res) => {
-
+  
   const placeObj = {
     name: req.query.name,
     address: req.query.address,
