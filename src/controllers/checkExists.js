@@ -8,7 +8,7 @@ exports.get = (req, res) => {
     name: req.query.name,
     address: req.query.address,
     postcode: req.query.postcode,
-    lat_long: [],
+    lat_long: '',
   };
 
   const pc = encodeURI(req.query.postcode);
@@ -16,11 +16,14 @@ exports.get = (req, res) => {
 fetch(`http://api.postcodes.io/postcodes/${pc}`)
     .then(response => response.json()
         )
-          .then(response =>
-          placeObj.lat_long.push.apply(placeObj.lat_long, [response.latitude, response.longitude])
-          console.log(placeObj)
+          .then(data =>
+        placeObj.lat_long = [data.result.latitude, data.result.longitude]
         )
-// above not working yet
+
+
+
+
+
 
   queries.checkPlace(placeObj)
     .then((x) => {
