@@ -16,6 +16,7 @@ exports.get = (req,res) => {
             console.log(err);
           })
           .then(resultsArr => {
+            console.log(resultsArr)
             res.render('listView', {
                 resultsArr, layout: 'list',
               });
