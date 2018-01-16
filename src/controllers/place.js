@@ -3,6 +3,10 @@ const queries = require('./queries');
 exports.get = (req, res) => {
   const placeName = req.params.place;
 
+    if(!placeName){
+          res.render('error', { layout: 'error' });
+      }
+      
   queries
     .getPlace(placeName)
     .then((placeDetails) => {
