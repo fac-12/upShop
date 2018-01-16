@@ -3,12 +3,20 @@ const queries = require('./queries');
 exports.get = (req, res) => {
   const placeName = req.params.place;
 
+
   queries
     .getPlace(placeName)
-    .then(placeDetails => {
-      let placeResults = placeDetails[0]
-      let values = placeDetails;
-      res.render('placeDetails', { placeResults, values, layout: 'navHome'})
+    .then((placeDetails) => {
+      const placeResults = placeDetails[0]
+      const placeResultsId = placeDetails[0].id
+      queries.getValues(placeResultsId)
+        .then((getValueResult) => {
+          const values = getValueResult[0].standard;
+          res.render('placeDetails', { placeResults, values, layout: 'navHome' })
+        })
+        .catch((err) => {
+          console.log(err);
+        })
     })
     .catch((err) => {
       console.log(err);
