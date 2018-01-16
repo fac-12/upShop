@@ -15,7 +15,7 @@ queries
     })
     .then(resultsArr => {
       res.render('listView', {
-          resultsArr, layout: 'list',
+          resultsArr, layout: 'list', helpers: { json: function (context) { return JSON.stringify(context); } }
         });
     })
 };

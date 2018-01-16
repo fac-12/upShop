@@ -31,3 +31,4 @@ mapImg.addEventListener("click", function(e){
     mymap.invalidateSize();
 })
 
+ console.log(resultsArr);
