@@ -34,6 +34,7 @@
     "es6-promise": "^4.2.2",
     "express": "^4.16.2",
     "express-handlebars": "^3.0.0",
+    "geolib": "^2.0.24",
     "isomorphic-fetch": "^2.2.1",
     "pg-promise": "^7.3.3",
     "query-string": "^5.0.1",

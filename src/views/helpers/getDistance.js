@@ -1,8 +1,14 @@
 const geolib = require('geolib');
 
-const dist = geolib.getDistance(
-    {51.5103, 7.49347},
-    {"51° 31' N", "7° 28' E"}
-);
+module.exports = (lat_long) => {
 
-console.log(dist/1000, 'km');
+  const latA = lat_long.split(' ')[0].slice(1, 16);
+  const longA = lat_long.split(' ')[1].slice(0, 19);
+  const distance = geolib.getDistance(
+      { latitude: latA, longitude: longA },
+      { latitude: 51.5295460939963, longitude: -0.0423161603498166 } // hard coded for fac
+      )/1000+'km';
+
+  return distance;
+};
+  
