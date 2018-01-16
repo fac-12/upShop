@@ -14,22 +14,21 @@ exports.get = (req, res) => {
   };
 
   const placeObj = {
-    name: req.query.name,
-    address: req.query.address,
-    postcode: req.query.postcode,
-    lat_long: '',
+    name: decodeURI(req.query.name),
+    address: decodeURI(req.query.address),
+    postcode: decodeURI(req.query.postcode),
+    lat_long: req.query.lat_long,
+    description: req.query.description,
+    website: req.query.website,
   };
 
 
-  // need to add info to addPlace query
-
   queries.addPlace(placeObj, hoursObj)
-    .then((x) => {
+    .then(() => {
       res.render('addMoreDetails', {
         placeObj, hoursObj, layout: 'navHome',
       });
-      console.log(x)
-    }) 
+    })
     .catch((err) => {
       console.log(err);
     });

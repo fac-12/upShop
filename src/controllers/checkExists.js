@@ -12,19 +12,29 @@ exports.get = (req, res) => {
 
   const pc = encodeURI(req.query.postcode);
 
-fetch(`http://api.postcodes.io/postcodes/${pc}`)
-    .then(response => response.json()
-        )
-          .then(data =>
-        placeObj.lat_long = [data.result.latitude, data.result.longitude]
-        )
+  //Calls postcodes.io API to convert postcode into lat long
+  fetch(`http://api.postcodes.io/postcodes/${pc}`)
+    .then(response => response.json(),
+    )
+    .then(data =>
+    placeObj.lat_long = [data.result.latitude, data.result.longitude])
 
-
-  queries.checkPlace(placeObj)
+    queries.checkPlace(placeObj)
     .then((x) => {
       if (x[0].case == 0) {
+        console.log('check: ', placeObj);
+        const nameEnc = encodeURI(placeObj.name);
+        const addressEnc = encodeURI(placeObj.address);
+        
+        const encodedObj = {
+          name: nameEnc,
+          address: addressEnc,
+          postcode: pc,
+          lat_long: placeObj.lat_long,
+        }
+
         res.render('addMoreDetails', {
-          placeObj, layout: 'navHome',
+          encodedObj, layout: 'navHome',
         });
       } else {
         res.render('businessExists', {
@@ -37,4 +47,6 @@ fetch(`http://api.postcodes.io/postcodes/${pc}`)
         layout: 'error',
       });
     });
+// Checks if place exists in database
+
 };

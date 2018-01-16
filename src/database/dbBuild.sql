@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS places (
     lat_long VARCHAR(50) NOT NULL,
     postcode VARCHAR(10) NOT NULL,
     website VARCHAR(500),
-    hours VARCHAR(77) NOT NULL,
+    hours VARCHAR(200) NOT NULL,
     description VARCHAR(200) NOT NULL,
     created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );

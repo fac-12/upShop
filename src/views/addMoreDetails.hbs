@@ -1,12 +1,12 @@
 <form class="moreDetails" method="GET" action="/add/details">
 
-   <input class="displayNone" type="textarea" name="name" value={{ placeObj.name }}> {{ placeObj.name }}
-   <input class="displayNone" type="textarea" name="address" value={{ placeObj.address }}> {{ placeObj.address }}
-   <input class="displayNone" type="textarea" name="postcode" value={{ placeObj.postcode }}> {{ placeObj.postcode }}
-   <input class="displayNone" type="textarea" name="lat_long" value={{ placeObj.lat_long}}> {{ placeObj.lat_long }}
+   <input class="displayNone" type="textarea" name="name" value={{ encodedObj.name }}> {{ encodedObj.name }}
+   <input class="displayNone" type="textarea" name="address" value={{ encodedObj.address }}> {{ encodedObj.address }}
+   <input class="displayNone" type="textarea" name="postcode" value={{ encodedObj.postcode }}> {{ encodedObj.postcode }}
+   <input class="displayNone" type="textarea" name="lat_long" value={{ encodedObj.lat_long}}> {{ encodedObj.lat_long }}
 
 <label for="website">Website</label>
-<input type="url" name="website">
+<input type="url" name="website" placeholder="http://www.foundersandcoders.com">
 
 <h3>Opening Hours</h3>
 <label for="mondayo">Monday</label>
