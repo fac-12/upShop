@@ -20,7 +20,9 @@ exports.get = (req, res) => {
          placeResultsId = placeDetails[0].id;
       }
     })
-    .catch();
+    .catch((err) => {
+      res.render('error', { layout: 'error' });
+          });
 
   queries
     .getValues(placeResultsId)
