@@ -11,7 +11,7 @@ router.get('/', home.get);
 router.get('/search', search.get);
 router.get('/search/category', category.get);
 router.get('/place/:place', place.get);
-router.get('/add', add.get)
+router.get('/add', add.get);
 router.get('/checkExists', checkExists.get);
 router.get('/add/details', addDetails.get);
 
