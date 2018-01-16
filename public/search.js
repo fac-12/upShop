@@ -1,6 +1,3 @@
-/* eslint-disable */
-var categoryBtn = document.getElementsByClassName('categoryBtn');
-var categoryBtnArr = Array.from(categoryBtn);
 var getLocation = document.getElementById('getLocation');
 var postcode = document.getElementById('postcode');
 
