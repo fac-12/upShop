@@ -42,6 +42,3 @@ options.ssl = (options.host !== 'localhost');
 }
 
 module.exports = pgp(options);
-
-
-

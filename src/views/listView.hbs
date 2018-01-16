@@ -1,4 +1,5 @@
-<main class="listResults">
+<main>
+<div class="listResults" id="listResults">
 	{{#if resultsArr}}
     {{#each resultsArr}}
         <section class="results">
@@ -14,4 +15,22 @@
 		<h2>Sorry, there's no businesses in this category yet!</h2>
 	</div>
 	{{/if}}
+</div>
+
+
+<div id="mapid" class="map"></div>
+<script>
+
+var mymap = L.map('mapid').setView({{JSON.parse(resultsArr[0].lat_long)}}, 13);
+
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    maxZoom: 14,
+    id: 'mapbox.streets',
+    accessToken: 'pk.eyJ1IjoibHVjeW1rIiwiYSI6ImNqY2hxOXp0ODJiOW8yeHBnMmxtMjZuNnAifQ.tsRJmfxB-VdGws5WHp0yhQ'
+}).addTo(mymap);
+
+
+</script>
+
 </main>
