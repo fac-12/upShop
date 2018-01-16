@@ -21,7 +21,7 @@ exports.get = (req, res) => {
       }
     })
     .catch((err) => {
-      res.render('error', { layout: 'error' });
+     console.log(err)
           });
 
   queries
