@@ -18,19 +18,21 @@ exports.get = (req, res) => {
       else {
          placeResults = placeDetails[0];
          placeResultsId = placeDetails[0].id;
-      }
-    })
-    .catch((err) => {
-     console.log(err)
-          });
 
-  queries
-    .getValues(placeResultsId)
-    .then((getValueResult) => {
-            const values = getValueResult[0].standard;
-            res.render('placeDetails', { placeResults, values, layout: 'navHome' })
+         queries
+          .getValues(placeResultsId)
+          .then((getValueResult) => {
+                  const values = getValueResult[0].standard;
+                  res.render('placeDetails', { placeResults, values, layout: 'navHome' })
           })
     .catch((err) => {
       res.render('error', { layout: 'error' });
           })
     }
+    })
+    .catch((err) => {
+    res.render('error', { layout: 'error' });
+          })
+  }
+
+

@@ -9,7 +9,7 @@ const app = require('../app');
 
 const endpoints = ['/',
            '/search',
-           '/search/:category',
+           '/search/category',
            '/place/:place',
            '/add',
            '/checkExists',
