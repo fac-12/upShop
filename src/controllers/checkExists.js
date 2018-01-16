@@ -2,7 +2,7 @@ const queries = require('./queries');
 const fetch = require('isomorphic-fetch');
 
 exports.get = (req, res) => {
-
+  
   const placeObj = {
     name: req.query.name,
     address: req.query.address,

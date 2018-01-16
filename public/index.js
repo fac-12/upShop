@@ -1,3 +1,4 @@
+
 /* eslint-disable */
 var categoryBtn = document.getElementsByClassName('categoryBtn');
 var categoryBtnArr = Array.from(categoryBtn);
@@ -25,3 +26,4 @@ var options = {
 }
   navigator.geolocation.getCurrentPosition(success, error, options)
 })
+
