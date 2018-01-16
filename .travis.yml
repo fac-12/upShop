@@ -14,3 +14,7 @@ env:
   global:
      - TRAVIS=true 
      - NODE_ENV=test
+
+cache:
+  directories:
+    - node_modules
