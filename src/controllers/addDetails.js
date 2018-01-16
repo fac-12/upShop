@@ -25,16 +25,11 @@ exports.get = (req, res) => {
 
   queries.addPlace(placeObj, hoursObj)
     .then(() => {
-      res.render('addMoreDetails', {
-        placeObj, hoursObj, layout: 'navHome',
+      res.render('success', {
+        placeObj, layout: 'navHome',
       });
     })
     .catch((err) => {
       console.log(err);
     });
-//   console.log('hours: ', hoursObj);
-
-//   res.render('success', {
-//     layout: 'navHome',
-//   });
 };
