@@ -23,13 +23,10 @@ exports.get = (req, res) => {
       }
     })
     .then((data) => {
-      console.log('hit me')
       placeObj.lat_long = [data.result.latitude, data.result.longitude];
       queries.checkPlace(placeObj)
         .then((x) => {
-          console.log('This is x ', x);
           if (x[0].case == 0) {
-            console.log('check: ', placeObj);
             const nameEnc = encodeURI(placeObj.name);
             const addressEnc = encodeURI(placeObj.address);
 
