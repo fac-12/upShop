@@ -7,16 +7,10 @@ body {
 .displayNone {
   display: none; }
 
-.map {
-	height: 600px;
-	display: none;
-}
-
 .icon {
   padding: 7%;
   height: 70px;
   width: auto; }
-
 
 .navHome {
   position: fixed;
@@ -142,5 +136,22 @@ body {
     font-weight: bold;
     text-align: center;
     line-height: 3; }
+
+.listResults {
+  display: flex; }
+
+.results {
+  width: 80%;
+  margin: auto;
+  font: "Assistant", Helvetica, sans-serif;
+  font-size: 1.2rem;
+  border-style: solid;
+  border-color: #F1C373;
+  border-radius: 1.5%; }
+
+.results a {
+  color: inherit;
+  font-weight: bolder;
+  text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */

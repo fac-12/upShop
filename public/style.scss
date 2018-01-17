@@ -11,7 +11,11 @@ $place-heading-size: 2.5rem;
 
 //containers
 
+$border-radius: 1.5%;
+
 $main-container-width: 80%;
+
+$info-element-padding-top: 2rem;
 //Mobile View
 body {
   margin: 0;
@@ -20,10 +24,12 @@ body {
   color: $upshop-grey;
 }
 
+
 //Universal//
 
 .displayNone {
 	display: none;
+
 }
 
 .icon{
@@ -245,4 +251,24 @@ body {
       line-height: 3;
     }
 
+}
+.listResults {
+  display: flex;
+}
+
+.results {
+
+  width: $main-container-width;
+  margin: auto;
+  font: $main-font;
+  font-size: $medium-font;
+  border-style: solid;
+  border-color: $upshop-yellow;
+  border-radius: $border-radius;
+}
+
+.results a {
+  color: inherit;
+  font-weight: bolder;
+  text-decoration: none;
 }
