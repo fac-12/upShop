@@ -3,6 +3,7 @@ const queries = require('./queries');
 
 
 exports.get = (req,res) => {
+
   const cat = req.query.category;
 
   // const location = req.params.location;

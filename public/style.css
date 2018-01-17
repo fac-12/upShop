@@ -1,8 +1,140 @@
-.displayNone {
-	display: none;
-}
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: "Assistant", Helvetica, sans-serif;
+  color: #494A4C; }
 
-.icon{
-	height: 100px;
-	width: auto;
-}
+.displayNone {
+  display: none; }
+
+.icon {
+  padding: 7%;
+  height: 70px;
+  width: auto; }
+
+.navHome {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 18%;
+  text-align: center;
+  border-top: 4px solid #F1C373;
+  background-color: white;
+  display: none; }
+
+.homePage__buttonContainer {
+  height: 80%;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+
+.homePage__header {
+  height: 15%; }
+  .homePage__header h1 {
+    margin: 0;
+    padding-top: 10%;
+    text-align: center;
+    line-height: 2; }
+
+.homePage__button {
+  background-color: #F1C373;
+  width: 64%;
+  padding-top: 21%;
+  padding-bottom: 21%;
+  text-align: center;
+  border-radius: 5px; }
+
+.addBusiness__container {
+  text-align: center;
+  display: block;
+  height: 82%; }
+
+.addBusiness__form {
+  width: 75%;
+  margin: auto;
+  padding-top: 22%; }
+  .addBusiness__form span {
+    font-size: 1.2rem;
+    font-weight: bold; }
+  .addBusiness__form input {
+    display: block;
+    margin: 7% auto;
+    padding: 4%;
+    width: 80%;
+    background-color: #C4C4C4;
+    font-size: 1rem; }
+  .addBusiness__form .addBusiness_submit {
+    display: block;
+    padding: 6%;
+    margin-top: 15%;
+    width: 60%;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #494A4C;
+    background-color: #F1C373; }
+
+.addMoreDetails__container {
+  height: 82%;
+  padding-top: 5%;
+  width: 80%;
+  margin: auto; }
+  .addMoreDetails__container form {
+    height: 82%; }
+  .addMoreDetails__container input {
+    margin: 2%; }
+  .addMoreDetails__container .hours {
+    width: 80%;
+    margin: auto; }
+  .addMoreDetails__container .moreDetails_name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 2%; }
+
+.messageBox {
+  width: 80%;
+  margin: auto;
+  text-align: center; }
+
+.choose_Category {
+  width: 80%;
+  margin: auto; }
+  .choose_Category .categories {
+    display: flex;
+    flex-wrap: wrap;
+    height: 20%;
+    width: 20%; }
+  .choose_Category input {
+    display: block;
+    padding: 4%;
+    background-color: #C4C4C4;
+    font-size: 1rem; }
+  .choose_Category .location_img {
+    height: 40px;
+    width: auto; }
+  .choose_Category .postcode__submit {
+    display: inline; }
+  .choose_Category button {
+    background-color: #F1C373; }
+
+.place_details {
+  width: 80%;
+  margin: auto; }
+  .place_details .icon {
+    height: 30px;
+    width: auto; }
+
+.place_header {
+  height: 18%;
+  background-color: #F1C373; }
+  .place_header h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    line-height: 3; }
+
+/*# sourceMappingURL=style.css.map */

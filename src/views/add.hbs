@@ -1,10 +1,12 @@
-<main>
-<form action="/checkExists" method="GET">
-  	Name of business:<br>
- 	<input type="text" name="name" required><br>
-  	Street:<br>
+<!-- <main> -->
+  <div class="addBusiness__container">
+<form class = "addBusiness__form" action="/checkExists" method="GET">
+  	<span>Name of business:</span>
+ 	<input type="text" name="name" required>
+  	<span>Street:</span>
   	<input type="text" name="address" required>
-  	Postcode:<br>
+  	<span>Postcode:</span>
   	<input type="text" name="postcode" required>
-  	<input type="submit" name="Submit">
+  	<input type="submit" name="Submit" class = "addBusiness_submit">
 </form>
+  </div>
