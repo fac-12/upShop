@@ -22,7 +22,7 @@ const getValues = (id) => {
 
 //still need check comments
 const addPlace = (formData, hours) => {
-  console.log("category: ", formData.category);
+  console.log("form value: ", formData.values);
   return db.query(`
   INSERT INTO places (name, address, lat_long, postcode, website, hours, description) VALUES ($1, $2, $3, $4, $5, $6, $7)`, [formData.name, formData.address, formData.lat_long, formData.postcode, formData.website, hours, formData.description]);
 };
@@ -32,8 +32,17 @@ const getPlacesByStandard = (standard) => {
 };
 
 const addCatConnections = (formData) => {
+  console.log('cat bars and rest: ', formData.category)
   return db.query(`
   INSERT INTO category_connections (place_id, category_id) VALUES ((SELECT id FROM places WHERE name = $1), (SELECT id FROM categories WHERE name=$2))`, [formData.name, formData.category]);
+};
+
+const addStandardConnections = (formData) => {
+  const arr = formData.values;
+  arr.forEach((value, index, array) => {
+    return db.query (
+      `INSERT INTO standard_connections (place_id, standard_id) VALUES ((SELECT id FROM places WHERE name = $1), (SELECT id FROM standards WHERE name=$2))`, [formData.name, value]);
+  });
 };
 
 module.exports = {
@@ -44,4 +53,5 @@ module.exports = {
   getValues,
   getPlacesByStandard,
   addCatConnections,
+  addStandardConnections,
 };

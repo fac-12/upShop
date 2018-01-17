@@ -21,28 +21,44 @@ exports.get = (req, res) => {
     description: req.query.description,
     website: req.query.website,
     category: req.query.category,
+    values: req.query.value,
   };
 
   queries.addPlace(placeObj, hoursObj)
     .then(() => {
-      console.log('req.query: ', req.query);
-      res.render('success', {
-        placeObj, layout: 'navHome',
-      });
-    })
-    .catch((err) => {
-      console.log(err);
+      queries.addCatConnections(placeObj)
+        .then(() => {
+          res.render('success', {
+            placeObj, layout: 'navHome',
+          });
+        })
+        .catch((err) => {
+          console.log(err);
+        });
     });
 
-  // queries.addCatConnections(placeObj)
-  //   .then(() => {
-  //     console.log('in add cat: ', req.query.category);
-  //     res.render('success', {
-  //       placeObj, layout: 'navHome',
-  //     });
-  //   })
-  //   .catch((err) => {
-  //     console.log(err);
-  //   });
-};
+//   queries.addStandardConnections(placeObj)
+//     .then(() => {
+//       console.log('in add cat: ', req.query.values);
+//       res.render('success', {
+//         placeObj, layout: 'navHome',
+//       });
+//     })
+//     .catch((err) => {
+//       console.log(err);
+//     });
+// };
 
+// queries.addPlace(placeObj, hoursObj)
+// .then(() => {
+//   queries.addCatConnections(placeObj)
+//     .then(() => {
+//       queries.addStandardConnections(placeObj){
+//   res.render('success', {
+//     placeObj, layout: 'navHome',
+//   });
+//     })
+//     .catch((err) => {
+//       console.log(err);
+//     });
+};
