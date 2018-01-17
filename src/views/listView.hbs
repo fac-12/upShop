@@ -5,7 +5,9 @@
       {{#if this.name}}
         <section class="results">
           <p><a href = '/place/{{ name }}'>{{ name }}</a></p>
-          <p>{{ lat_long }}</p>
+          {{#if lat_long }}
+          <p>{{ distance lat_long ../currentLL }}</p>
+          {{/if}}
           <p>{{ hours }}</p>
       </section>
       {{/if}}

@@ -9,10 +9,11 @@ exports.get = (req, res) => {
     .then((placeDetails) => {
       const placeResults = placeDetails[0]
       const placeResultsId = placeDetails[0].id
+      const placeHours = JSON.parse(placeResults.hours)
       queries.getValues(placeResultsId)
         .then((getValueResult) => {
           const values = getValueResult[0].standard;
-          res.render('placeDetails', { placeResults, values, layout: 'navHome' })
+          res.render('placeDetails', { placeResults, placeHours, values, layout: 'navHome' })
         })
         .catch((err) => {
           console.log(err);
