@@ -3,10 +3,10 @@ const queries = require('./queries');
 exports.get = (req, res) => {
   const placeName = req.params.place;
 
-
   queries
     .getPlace(placeName)
     .then((placeDetails) => {
+      console.log("placeDetails", placeDetails)
       const placeResults = placeDetails[0]
       const placeResultsId = placeDetails[0].id
       const placeHours = JSON.parse(placeResults.hours)

@@ -20,7 +20,7 @@ exports.get = (req,res) => {
       queries.getPlacesByCat(cat)
       .then((resultsArr) => {
         var currentLL = [data.result.latitude, data.result.longitude];
-        resultsArr.push(currentLL);
+        resultsArr = resultsArr;
       res.render('listView', {
           resultsArr, currentLL, layout: 'list', helpers: { json: function (context) { return JSON.stringify(context); } }
         });
