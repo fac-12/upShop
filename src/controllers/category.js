@@ -15,6 +15,7 @@ queries
       console.log(err);
     })
     .then(resultsArr => {
+      console.log('ARR ', resultsArr)
       res.render('listView', {
           resultsArr, layout: 'list',
         });
