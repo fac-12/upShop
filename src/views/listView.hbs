@@ -5,8 +5,8 @@
         <section class="results">
           <img class="resultImg" src={{ resImg }}></img>
           <p><a href = '/place/{{ name }}'>{{ name }}</a></p>
-          <p>{{ lat_long }}</p>
-          <p>{{ hours }}</p>
+          <p>{{ distance lat_long }}</p>
+          <p>{{ status hours }}</p>
           <i class="fa fa-arrow-circle-up" aria-hidden="true">{{ resVotes }}</i>
       </section>
       {{/each}}
