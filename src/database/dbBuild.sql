@@ -67,7 +67,7 @@ INSERT INTO users (username, email) VALUES ('Steve', 'stevebuscemi@gmail.com');
 
 INSERT INTO categories (name, description) VALUES ('Clothes', 'Things that you can wear!'), ('Bars and Restaurants', 'Grab a bite or a drink'), ('Cafés', 'Grab a coffee or a pot of tea and cake'), ('Groceries', 'Fruit, veg, avocados, biscuits!'), ('Entertainment', 'Have a laugh at the theatre, art space, sports and more'), ('Other', 'Other weird and wonderful things');
 
-INSERT INTO standards (name, description) VALUES ('Organic', 'Places that stock a large proportion of organic foods'), ('Eco-conscious', 'Places that are a bit green'), ('Fairtrade', 'Stock certified fairtrade products'), ('Living Wage', 'Businesses that pay its employees the living wage'), ('Community', 'Places that contribute to the community'), ('Veg*an', 'Vegetarian and Vegan focussed food');
+INSERT INTO standards (name, description) VALUES ('Organic', 'Places that stock a large proportion of organic foods'), ('Eco-conscious', 'Places that are a bit green'), ('Fairtrade', 'Stock certified fairtrade products'), ('Living Wage', 'Businesses that pay its employees the living wage'), ('Community', 'Places that contribute to the community'), ('Veg*n', 'Vegetarian and Vegan focussed food'), ('Non-profit', 'Places that use surplus revenue to further achieve their ultimate objective'), ('Social Enterprise', 'Businesses whose social mission is as core to their success as any potential profit'), ('Bulk Bins', 'Places where you can bring your own container to fill up on dry goods'), ('Tackling Waste', 'Have a focus on reducing or repurposing waste produce');
 
 INSERT INTO comments (place_id, user_id, comment) VALUES (1, 1, 'Fab coffee and helps people too!');
 
