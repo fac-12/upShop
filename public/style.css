@@ -37,8 +37,7 @@ body {
   height: 18%;
   text-align: center;
   border-top: 4px solid #F1C373;
-  background-color: white;
-  display: none; }
+  background-color: white; }
 
 .map {
   height: 430px;
