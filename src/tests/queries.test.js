@@ -20,14 +20,6 @@ test('testing getPlacesByCat query is returning an object', (t) => {
   runDbBuild((err, res) => {
     queries.getPlacesByCat('3').then((res) => {
       t.equals(typeof res, 'object', 'response should be an object');
-      t.end();
-    });
-  });
-});
-
-test('testing getPlacesByCat query is returning an object with length 11', (t) => {
-  runDbBuild((err, res) => {
-    queries.getPlacesByCat('3').then((res) => {
       t.equals(Object.keys(res[0]).length, 11, 'Object contains 11 keys');
       t.end();
     });
@@ -64,11 +56,29 @@ test('testing checkPlace query returns false', (t) => {
   });
 });
 
-// test('testing addCatConnections adds a row to category_connections table'), (t) => {
-//   runDbBuild((err, res) => {
-//   queries.addCatConnections().then ((res) => {
-//     t.equals(actual, expected, 'response should return');
-//     t.end();
-//   })
-//   })
-// }
+test('testing addCatConnections', (t) => {
+  runDbBuild((err, res) => {
+    const testObj = {
+      name: 'Second Shot',
+      address: '475 Bethnal Green Rd',
+      category: 'Cafés',
+      values: 'Organic',
+    };
+
+    queries.addCatConnections(testObj).then((res) => {
+      t.deepEquals((testObj.category), 'Cafés', 'response should a value');
+      t.end();
+    });
+  });
+});
+
+
+test('testing getValues query returns the all values', (t) => {
+  runDbBuild((err, res) => {
+    queries.getValues(1).then((res) => {
+      t.deepEquals(res[0].standard[0], 'Fairtrade', 'response should return Fairtrade value');
+      t.deepEquals(res[0].standard.length, 3, 'response should return 3 values');
+      t.end();
+    });
+  });
+});
