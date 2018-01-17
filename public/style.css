@@ -22,6 +22,10 @@ body {
   background-color: white;
   display: none; }
 
+.map {
+  height: 200px;
+  display: none; }
+
 .homePage__buttonContainer {
   height: 80%;
   margin: 0;
