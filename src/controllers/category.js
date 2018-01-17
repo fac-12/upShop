@@ -22,7 +22,7 @@ exports.get = (req,res) => {
         var currentLL = [data.result.latitude, data.result.longitude];
         resultsArr.push(currentLL);
       res.render('listView', {
-          resultsArr, layout: 'list', helpers: { json: function (context) { return JSON.stringify(context); } }
+          resultsArr, currentLL, layout: 'list', helpers: { json: function (context) { return JSON.stringify(context); } }
         });
       });
     })
