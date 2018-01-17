@@ -1,0 +1,248 @@
+//COLORS
+$upshop-yellow: #F1C373;
+$upshop-grey: #494A4C;
+$input-fill: #C4C4C4;
+
+//font
+$main-font: 'Assistant', Helvetica, sans-serif;
+$medium-font: 1.2rem;
+$form-font: 1rem;
+$place-heading-size: 2.5rem;
+
+//containers
+
+$main-container-width: 80%;
+//Mobile View
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: $main-font;
+  color: $upshop-grey;
+}
+
+//Universal//
+
+.displayNone {
+	display: none;
+}
+
+.icon{
+  padding:7%;
+	height: 70px;
+	width: auto;
+}
+
+.navHome {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 18%;
+  text-align: center;
+  border-top: 4px solid $upshop-yellow;
+  background-color: white;
+  display: none;
+}
+
+//MAP
+
+// .icon{
+// 	height: 100px;
+// 	width: auto;
+// 	display: inline-block;
+// }
+//
+//
+// .map {
+// 	height: 200px;
+// 	display: none;
+// }
+//
+// .list_img {
+// 	display: none;
+// }
+//
+// .listResults {
+// 	display: block;
+// }
+//
+// .displayNone {
+// 	display: none;
+// }
+
+
+//Home Page//
+
+.homePage__buttonContainer {
+  height: 80%;
+  margin:0;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.homePage__header{
+
+     height: 15%;
+
+     h1 {
+       margin: 0;
+       padding-top: 10%;
+       text-align: center;
+       line-height: 2;
+
+     }
+}
+.homePage__button {
+    background-color: $upshop-yellow;
+    width: 64%;
+    padding-top: 21%;
+    padding-bottom: 21%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+//Add business
+
+.addBusiness__container {
+    // background-color: red;
+    text-align: center;
+    display: block;
+    height: 82%;
+}
+.addBusiness__form {
+  width: 75%;
+  margin: auto;
+  padding-top: 22%;
+  // background-color: blue;
+
+    span {
+      font-size: $medium-font;
+      font-weight: bold;
+    }
+    input {
+      display: block;
+      margin: 7% auto;
+      padding: 4%;
+      width: 80%;
+      background-color: $input-fill;
+      font-size: $form-font;
+
+    }
+    .addBusiness_submit {
+      display: block;
+      padding:6%;
+      margin-top: 15%;
+      width: 60%;
+      text-align: center;
+      font-size: $medium-font;
+      color: $upshop-grey;
+      background-color: $upshop-yellow;
+    }
+}
+
+//Add details
+
+.addMoreDetails__container {
+  height: 82%;
+  padding-top: 5%;
+  // overlow-y: scroll;
+  width: $main-container-width;
+  margin: auto;
+
+      form {
+        height:82%;
+      }
+
+      input {
+        margin: 2%;
+      }
+
+
+      .time {
+
+      }
+
+      .hours {
+        width: 80%;
+        margin: auto;
+      }
+
+     .moreDetails_name {
+       font-size: $medium-font;
+       font-weight: bold;
+       margin-bottom: 2%;
+     }
+
+}
+
+// Success
+.messageBox {
+  width: $main-container-width;
+  margin: auto;
+  text-align: center;
+
+}
+
+//category search
+.choose_Category {
+
+  width: $main-container-width;
+  margin: auto;
+
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    height: 20%;
+    width: 20%;
+  }
+
+  input {
+    display: block;
+    padding: 4%;
+    background-color: $input-fill;
+    font-size: $form-font;
+  }
+
+  .location_img {
+    height: 40px;
+    width: auto;
+  }
+
+  .postcode__submit {
+    display: inline;
+  }
+
+  button {
+    background-color: $upshop-yellow;
+  }
+}
+
+
+//Place Details
+
+.place_details {
+  width: $main-container-width;
+  margin: auto;
+
+  .icon {
+    height: 30px;
+    width: auto;
+  }
+}
+
+.place_header {
+  height: 18%;
+  background-color: $upshop-yellow;
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: $place-heading-size;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+      line-height: 3;
+    }
+
+}

@@ -1,6 +1,10 @@
+<div class="choose_Category">
+
 <h2>I'm looking for...</h2>
 
 <main class="categoryDisplay">
+  <div class="categories">
+
   <form class="catSearch" name="catSearch" method="GET" action="/search/category">
     <input type="radio" class="categoryBtn" name="category" value="1">Clothes
     <input type="radio" class="categoryBtn" name="category" value="2">Bars and Restaurants
@@ -9,10 +13,15 @@
     <input type="radio"class="categoryBtn" name="category" value="5">Entertainment
     <input type="radio" class="categoryBtn" name="category" value="6">Other
 
+
+  </div>
 <h2>In...</h2>
-<input type="text" id="postcode" placeholder="Enter postcode" name="postcode">
+<input type="text" id="postcode" class = "postcode__submit" placeholder="Enter postcode" name="postcode">
 <img class="location_img" id="getLocation" src="/assets/search-arrow.png">
 <button type="submit">Go!</button>
 </form>
 </main>
+
+</div>
+
 <script type='text/javascript' src='/search.js'></script>
