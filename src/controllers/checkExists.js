@@ -16,7 +16,7 @@ exports.get = (req, res) => {
     .then((response) => {
       if (response.status >= 400) {
         const errorMessage = 'This postcode does not exist';
-        throw new Error(errorMessage)
+        throw new Error(errorMessage);
       } else {
         return response.json();
       }
@@ -58,15 +58,3 @@ exports.get = (req, res) => {
 });
     });
 };
-
-
-// const getValues = (data) => {
-//   console.log('getValues running');
-//   const selectedValues = [];
-//   const inputFields = data.getElementsByType('checkbox');
-//   const numberOfInputs = inputFields.length;
-//   for (let i=0; i<numberOfInputs; i++) {
-//     if (inputFields[i].type === 'checkbox' && inputFields[i].checked === true) selectedValues.push(inputFields[i].value);
-//   }
-//   console.log('select: ', selectedValues);
-// };
