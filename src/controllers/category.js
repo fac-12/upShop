@@ -10,7 +10,7 @@ exports.get = (req,res) => {
 
 //query db with "cat" & location
 queries
-    .catResults(cat)
+    .getPlacesByCat(cat)
     .catch((err) => {
       console.log(err);
     })

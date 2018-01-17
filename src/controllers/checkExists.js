@@ -2,7 +2,6 @@ const queries = require('./queries');
 const fetch = require('isomorphic-fetch');
 
 exports.get = (req, res) => {
-
   const placeObj = {
     name: req.query.name,
     address: req.query.address,
@@ -59,3 +58,15 @@ exports.get = (req, res) => {
 });
     });
 };
+
+
+// const getValues = (data) => {
+//   console.log('getValues running');
+//   const selectedValues = [];
+//   const inputFields = data.getElementsByType('checkbox');
+//   const numberOfInputs = inputFields.length;
+//   for (let i=0; i<numberOfInputs; i++) {
+//     if (inputFields[i].type === 'checkbox' && inputFields[i].checked === true) selectedValues.push(inputFields[i].value);
+//   }
+//   console.log('select: ', selectedValues);
+// };
