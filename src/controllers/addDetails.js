@@ -28,13 +28,16 @@ exports.get = (req, res) => {
     .then(() => {
       queries.addCatConnections(placeObj)
         .then(() => {
-          queries.addStandardConnections(placeObj)
+          queries.addStandardConnections(placeObj);
           res.render('success', {
             placeObj, layout: 'navHome',
           });
         })
         .catch((err) => {
-          console.log(err);
+          res.render('error', {
+            err,
+            layout: 'error',
+          });
         });
     });
 };
