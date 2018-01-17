@@ -43,6 +43,12 @@ body {
   height: 430px;
   display: none; }
 
+.list_img {
+  display: none; }
+
+.listResults {
+  display: block; }
+
 .homePage__buttonContainer {
   height: 80%;
   margin: 0;
