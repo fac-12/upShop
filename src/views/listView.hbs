@@ -1,5 +1,6 @@
-<main class="listResults">
-	{{#if resultsArr}}
+<main>
+<div class="listResults" id="listResults">
+  {{#if resultsArr}}
     {{#each resultsArr}}
         <section class="results">
           <img class="resultImg" src={{ resImg }}></img>
@@ -7,11 +8,22 @@
           <p>{{ lat_long }}</p>
           <p>{{ hours }}</p>
           <i class="fa fa-arrow-circle-up" aria-hidden="true">{{ resVotes }}</i>
-    	</section>
+      </section>
       {{/each}}
     {{else}}
     <div class="messageBox">
-		<h2>Sorry, there's no businesses in this category yet!</h2>
-	</div>
-	{{/if}}
+    <h2>Sorry, there's no businesses in this category yet!</h2>
+  </div>
+  {{/if}}
+</div>
+
+
+<div id="mapid" class="map"></div>
+<script>
+
+
+
+
+</script>
+
 </main>
