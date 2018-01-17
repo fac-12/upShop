@@ -20,11 +20,12 @@ exports.get = (req, res) => {
     lat_long: req.query.lat_long,
     description: req.query.description,
     website: req.query.website,
+    category: req.query.category,
   };
-
 
   queries.addPlace(placeObj, hoursObj)
     .then(() => {
+      console.log('req.query: ', req.query);
       res.render('success', {
         placeObj, layout: 'navHome',
       });
@@ -32,4 +33,16 @@ exports.get = (req, res) => {
     .catch((err) => {
       console.log(err);
     });
+
+  // queries.addCatConnections(placeObj)
+  //   .then(() => {
+  //     console.log('in add cat: ', req.query.category);
+  //     res.render('success', {
+  //       placeObj, layout: 'navHome',
+  //     });
+  //   })
+  //   .catch((err) => {
+  //     console.log(err);
+  //   });
 };
+
