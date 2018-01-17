@@ -2,15 +2,11 @@
 <div class="listResults" id="listResults">
   {{#if resultsArr}}
     {{#each resultsArr}}
-      {{#if this.name}}
         <section class="results">
           <p><a href = '/place/{{ name }}'>{{ name }}</a></p>
-          {{#if lat_long }}
-          <p>{{ distance lat_long ../currentLL }}</p>
-          {{/if}}
+          <p>{{ lat_long }} {{ ../currentLL }}</p>
           <p>{{ hours }}</p>
       </section>
-      {{/if}}
       {{/each}}
     {{else}}
     <div class="messageBox">
@@ -22,8 +18,9 @@
 
 <div id="mapid" class="map"></div>
 <script>
+
 var resultsArr = JSON.parse('{{{json resultsArr}}}');
-var currentLL = JSON.parse('{{{json currentLL}}}');
+
 </script>
 
 </main>

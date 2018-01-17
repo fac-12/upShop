@@ -4,6 +4,8 @@ var mapImg = document.getElementById('mapImg');
 var mapDiv = document.getElementById('mapid');
 var listResults = document.getElementById('listResults');
 
+console.log(resultsArr);
+
 var mymap = L.map('mapid').setView(currentLL, 13);
 
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
