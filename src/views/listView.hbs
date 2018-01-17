@@ -6,10 +6,10 @@
 <div class="listResults" id="listResults">
   {{#if resultsArr}}
     {{#each resultsArr}}
-        <section class="results">
-          <p><a href = '/place/{{ name }}'>{{ name }}</a></p>
-          <p>{{ distance lat_long ../currentLL }}</p>
-      </section>
+        <div class="result">
+            <p><a href = '/place/{{ name }}'>{{ name }}</a></p>
+            <p>{{ distance lat_long ../currentLL }}</p>
+      </div>
       {{/each}}
     {{else}}
     <div class="messageBox">

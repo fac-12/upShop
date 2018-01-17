@@ -19,11 +19,28 @@ body {
   height: 18%;
   text-align: center;
   border-top: 4px solid #F1C373;
-  background-color: white;
-  display: none; }
+  background-color: white; }
+
+.navbarMap {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 18%;
+  text-align: center;
+  border-top: 4px solid #F1C373;
+  background-color: white; }
+
+.navHomeList {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 18%;
+  text-align: center;
+  border-top: 4px solid #F1C373;
+  background-color: white; }
 
 .map {
-  height: 200px;
+  height: 430px;
   display: none; }
 
 .homePage__buttonContainer {
@@ -122,6 +139,24 @@ body {
   .choose_Category button {
     background-color: #F1C373; }
 
+.listResults {
+  display: flex;
+  flex-wrap: wrap; }
+
+.result {
+  width: 80%;
+  margin: 5% auto;
+  padding: 2%;
+  font-family: "Assistant", Helvetica, sans-serif;
+  font-size: 1.2rem;
+  border-style: solid;
+  border-color: #F1C373;
+  border-radius: 1.5%; }
+  .result a {
+    color: inherit;
+    font-weight: bolder;
+    text-decoration: none; }
+
 .place_details {
   width: 80%;
   margin: auto; }
@@ -140,22 +175,5 @@ body {
     font-weight: bold;
     text-align: center;
     line-height: 3; }
-
-.listResults {
-  display: flex; }
-
-.results {
-  width: 80%;
-  margin: auto;
-  font: "Assistant", Helvetica, sans-serif;
-  font-size: 1.2rem;
-  border-style: solid;
-  border-color: #F1C373;
-  border-radius: 1.5%; }
-
-.results a {
-  color: inherit;
-  font-weight: bolder;
-  text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
