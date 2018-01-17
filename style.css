@@ -17,7 +17,7 @@ Backtrace:
 /usr/local/bin/sass:22:in `load'
 /usr/local/bin/sass:22:in `<main>'
 */
-body:before {
+/*body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - style.scss"; }
+  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - style.scss"; }*/

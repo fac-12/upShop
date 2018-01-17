@@ -7,6 +7,9 @@ body {
 .displayNone {
   display: none; }
 
+textarea {
+  width: 100%; }
+
 .icon {
   padding: 7%;
   height: 70px;
@@ -48,6 +51,9 @@ body {
 
 .listResults {
   display: block; }
+
+.displayNone {
+  display: none; }
 
 .homePage__buttonContainer {
   height: 80%;
@@ -106,18 +112,25 @@ body {
   height: 82%;
   padding-top: 5%;
   width: 80%;
-  margin: auto; }
+  margin: auto;
+  height: fit-content;
+  padding-bottom: 36%; }
   .addMoreDetails__container form {
     height: 82%; }
   .addMoreDetails__container input {
     margin: 2%; }
+  .addMoreDetails__container label, .addMoreDetails__container h3 {
+    font-size: 1.08rem;
+    font-weight: bold; }
+  .addMoreDetails__container .time label, .addMoreDetails__container .time input {
+    font-size: 0.96rem; }
   .addMoreDetails__container .hours {
     width: 80%;
     margin: auto; }
   .addMoreDetails__container .moreDetails_name {
     font-size: 1.2rem;
     font-weight: bold;
-    margin-bottom: 2%; }
+    margin-bottom: 3%; }
 
 .messageBox {
   width: 80%;
@@ -147,7 +160,9 @@ body {
 
 .listResults {
   display: flex;
-  flex-wrap: wrap; }
+  flex-direction: column;
+  height: fit-content;
+  padding-bottom: 36%; }
 
 .result {
   width: 80%;

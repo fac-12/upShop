@@ -32,6 +32,10 @@ body {
 
 }
 
+textarea {
+  width: 100%;
+}
+
 .icon{
   padding:7%;
 	height: 70px;
@@ -85,6 +89,10 @@ body {
 .listResults {
  	display: block;
  }
+
+.displayNone {
+	display: none;
+}
 
 
 //Home Page//
@@ -163,9 +171,10 @@ body {
 .addMoreDetails__container {
   height: 82%;
   padding-top: 5%;
-  // overlow-y: scroll;
   width: $main-container-width;
   margin: auto;
+  height: fit-content;
+  padding-bottom: 36%;
 
       form {
         height:82%;
@@ -175,9 +184,16 @@ body {
         margin: 2%;
       }
 
+      label, h3 {
+        font-size: $medium-font * 0.9;
+        font-weight: bold;
+      }
+
 
       .time {
-
+      label, input {
+        font-size: $medium-font * 0.8;
+      }
       }
 
       .hours {
@@ -188,7 +204,7 @@ body {
      .moreDetails_name {
        font-size: $medium-font;
        font-weight: bold;
-       margin-bottom: 2%;
+       margin-bottom: 3%;
      }
 
 }
@@ -239,9 +255,11 @@ body {
 
 
 .listResults {
-  display: flex;
-  flex-wrap: wrap;
-}
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding-bottom: 36%;
+    }
 
 .result {
 
@@ -290,3 +308,6 @@ body {
     }
 
 }
+
+
+
