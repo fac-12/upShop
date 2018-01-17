@@ -6,7 +6,6 @@ exports.get = (req,res) => {
   const cat = req.query.category;
   const currentPC = (req.query.postcode).replace(" ", "").toString();
 
-<<<<<<< HEAD
   fetch(`http://api.postcodes.io/postcodes/${currentPC}`)
     .then((response) => {
       if (response.status >= 400) {
@@ -15,13 +14,9 @@ exports.get = (req,res) => {
       } else {
         return response.json();
       }
-queries
-    .getPlacesByCat(cat)
-    .catch((err) => {
-      console.log(err);
     })
     .then((data) => {
-      queries.catResults(cat)
+      queries.getPlacesByCat(cat)
       .then((resultsArr) => {
         var currentLL = [data.result.latitude, data.result.longitude];
         resultsArr.push(currentLL);
