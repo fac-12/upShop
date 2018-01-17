@@ -28,6 +28,7 @@ exports.get = (req, res) => {
     .then(() => {
       queries.addCatConnections(placeObj)
         .then(() => {
+          queries.addStandardConnections(placeObj)
           res.render('success', {
             placeObj, layout: 'navHome',
           });
@@ -36,29 +37,4 @@ exports.get = (req, res) => {
           console.log(err);
         });
     });
-
-//   queries.addStandardConnections(placeObj)
-//     .then(() => {
-//       console.log('in add cat: ', req.query.values);
-//       res.render('success', {
-//         placeObj, layout: 'navHome',
-//       });
-//     })
-//     .catch((err) => {
-//       console.log(err);
-//     });
-// };
-
-// queries.addPlace(placeObj, hoursObj)
-// .then(() => {
-//   queries.addCatConnections(placeObj)
-//     .then(() => {
-//       queries.addStandardConnections(placeObj){
-//   res.render('success', {
-//     placeObj, layout: 'navHome',
-//   });
-//     })
-//     .catch((err) => {
-//       console.log(err);
-//     });
 };
