@@ -4,5 +4,4 @@ module.exports = {
   distance: require('./distance'),
   status: require('./status'),
   listtimes: require('./listTimes'),
-  arr: require('./arrlength'),
 };
