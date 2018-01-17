@@ -1,11 +1,13 @@
 <main>
 <div class="listResults" id="listResults">
   {{#if resultsArr}}
-    {{#each resultsArr}}
+    {{#each resultsArr }}
         <section class="results">
           <img class="resultImg" src={{ resImg }}></img>
           <p><a href = '/place/{{ name }}'>{{ name }}</a></p>
-          <p>{{ lat_long }}</p>
+          {{#if lat_long }}
+          <p>{{ distance lat_long ../currentLL }}</p>
+          {{/if}}
           <p>{{ hours }}</p>
           <i class="fa fa-arrow-circle-up" aria-hidden="true">{{ resVotes }}</i>
       </section>
