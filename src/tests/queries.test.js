@@ -16,18 +16,18 @@ test('testing getPlace query returns an object', (t) => {
   });
 });
 
-test('testing catResults query is returning an object', (t) => {
+test('testing getPlacesByCat query is returning an object', (t) => {
   runDbBuild((err, res) => {
-    queries.catResults('3').then((res) => {
+    queries.getPlacesByCat('3').then((res) => {
       t.equals(typeof res, 'object', 'response should be an object');
       t.end();
     });
   });
 });
 
-test('testing catResults query is returning an object with length 11', (t) => {
+test('testing getPlacesByCat query is returning an object with length 11', (t) => {
   runDbBuild((err, res) => {
-    queries.catResults('3').then((res) => {
+    queries.getPlacesByCat('3').then((res) => {
       t.equals(Object.keys(res[0]).length, 11, 'Object contains 11 keys');
       t.end();
     });
@@ -63,3 +63,12 @@ test('testing checkPlace query returns false', (t) => {
     });
   });
 });
+
+// test('testing addCatConnections adds a row to category_connections table'), (t) => {
+//   runDbBuild((err, res) => {
+//   queries.addCatConnections().then ((res) => {
+//     t.equals(actual, expected, 'response should return');
+//     t.end();
+//   })
+//   })
+// }
