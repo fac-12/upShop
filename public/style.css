@@ -7,16 +7,10 @@ body {
 .displayNone {
   display: none; }
 
-.map {
-	height: 600px;
-	display: none;
-}
-
 .icon {
   padding: 7%;
   height: 70px;
   width: auto; }
-
 
 .navHome {
   position: fixed;
