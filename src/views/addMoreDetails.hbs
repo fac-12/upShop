@@ -1,6 +1,10 @@
+<div class="addMoreDetails__container">
+
 <form class="moreDetails" method="GET" action="/add/details">
 
-   <input class="displayNone" type="textarea" name="name" value={{ encodedObj.name }}> {{ placeName }}
+  <div class="moreDetails_name">
+    <input class="displayNone" type="textarea" name="name" value={{ encodedObj.name }}> {{ placeName }}
+  </div>
    <input class="displayNone" type="textarea" name="address" value={{ encodedObj.address }}>
    <input class="displayNone" type="textarea" name="postcode" value={{ encodedObj.postcode }}>
    <input class="displayNone" type="textarea" name="lat_long" value={{ encodedObj.lat_long}}>
@@ -8,36 +12,51 @@
 <label for="website">Website</label>
 <input type="url" name="website" placeholder="http://www...">
 
-<h3>Opening Hours</h3>
-<label for="mondayo">Monday</label>
-<input type="time" name="mondayo">
-<input type="time" name="mondayc">
+<div class="Hours">
 
-<label for="tueso">Tuesday</label>
-<input type="time" name="tueso">
-<input type="time" name="tuesc">
+    <h3>Opening Hours</h3>
+        <div class="time">
+          <label for="mondayo">Monday</label>
+          <input type="time" name="mondayo">
+          <input type="time" name="mondayc">
+        </div>
 
-<label for="wedso">Wednesday</label>
-<input type="time" name="wedso">
-<input type="time" name="wedsc">
+        <div class="time">
+          <label for="tueso">Tuesday</label>
+          <input type="time" name="tueso">
+          <input type="time" name="tuesc">
+        </div>
 
-<label for="thurso">Thursday</label>
-<input type="time" name="thurso">
-<input type="time" name="thursc">
+        <div class="time">
+          <label for="wedso">Wednesday</label>
+          <input type="time" name="wedso">
+          <input type="time" name="wedsc">
+        </div>
 
-<label for="frio">Friday</label>
-<input type="time" name="frio">
-<input type="time" name="fric">
+        <div class="time">
+          <label for="thurso">Thursday</label>
+          <input type="time" name="thurso">
+          <input type="time" name="thursc">
+        </div>
 
-<label for="sato">Saturday</label>
-<input type="time" name="sato">
-<input type="time" name="satc">
+        <div class="time">
+          <label for="frio">Friday</label>
+          <input type="time" name="frio">
+          <input type="time" name="fric">
+        </div>
 
-<label for="monday">Sunday</label>
-<input type="time" name="suno">
-<input type="time" name="sunc">
+        <div class="time">
+          <label for="sato">Saturday</label>
+          <input type="time" name="sato">
+          <input type="time" name="satc">
+        </div>
 
-
+        <div class="time">
+          <label for="monday">Sunday</label>
+          <input type="time" name="suno">
+          <input type="time" name="sunc">
+        </div>
+</div>
 
 	<h3>Category:</h3><br>
  		 <input type="radio" name="category" value="Clothes">
@@ -77,7 +96,9 @@
    	 <label for="Tacklingwaste">Tackling waste</label>
 
   	<h3>Comment:</h3><br>
-  	<input type="text" name="comment">
+  	<textarea type="text" name="comment"></textarea>
 
   	<input type="submit" name="Submit">
  </form>
+
+ </div>
