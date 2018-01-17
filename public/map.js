@@ -20,9 +20,8 @@ resultsArr.forEach(function(place, i){
         var llArr = latlong.split(",");
         llArr[0] = (llArr[0] * 1);
         llArr[1] = (llArr[1] * 1);
-        console.log(llArr);
         var marker = L.marker(llArr).addTo(mymap);
-        marker.bindPopup(place.name + ", " + place.address)
+        marker.bindPopup(`<a href="/place/${place.name}">${place.name}</a>` + ", " + place.address)
     }
 })
 

@@ -20,7 +20,6 @@ exports.get = (req,res) => {
       .then((resultsArr) => {
         var currentLL = [data.result.latitude, data.result.longitude];
         resultsArr.push(currentLL);
-        console.log(resultsArr);
       res.render('listView', {
           resultsArr, layout: 'list', helpers: { json: function (context) { return JSON.stringify(context); } }
         });
