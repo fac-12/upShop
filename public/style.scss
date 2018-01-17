@@ -46,9 +46,31 @@ body {
   text-align: center;
   border-top: 4px solid $upshop-yellow;
   background-color: white;
-  display: none;
+  // display: none;
 }
 
+.navbarMap {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 18%;
+  text-align: center;
+  border-top: 4px solid $upshop-yellow;
+  background-color: white;
+
+  // display: none;
+}
+
+.navHomeList {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 18%;
+  text-align: center;
+  border-top: 4px solid $upshop-yellow;
+  background-color: white;
+    display: none;
+}
 //MAP
 
 // .icon{
@@ -59,7 +81,7 @@ body {
 //
 //
 .map {
-	height: 200px;
+	height: 430px;
 	display: none;
 }
 //
@@ -224,6 +246,33 @@ body {
   }
 }
 
+//Results list
+
+
+.listResults {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.result {
+
+  width: $main-container-width;
+  margin: 5% auto;
+  padding: 2%;
+  font-family: $main-font;
+  font-size: $medium-font;
+  border-style: solid;
+  border-color: $upshop-yellow;
+  border-radius: $border-radius;
+
+  a {
+    color: inherit;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+
+}
+
 
 //Place Details
 
@@ -251,24 +300,4 @@ body {
       line-height: 3;
     }
 
-}
-.listResults {
-  display: flex;
-}
-
-.results {
-
-  width: $main-container-width;
-  margin: auto;
-  font: $main-font;
-  font-size: $medium-font;
-  border-style: solid;
-  border-color: $upshop-yellow;
-  border-radius: $border-radius;
-}
-
-.results a {
-  color: inherit;
-  font-weight: bolder;
-  text-decoration: none;
 }
