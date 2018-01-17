@@ -4,7 +4,6 @@ var mapImg = document.getElementById('mapImg');
 var mapDiv = document.getElementById('mapid');
 var listResults = document.getElementById('listResults');
 
-console.log(resultsArr);
 
 var mymap = L.map('mapid').setView(currentLL, 13);
 
@@ -16,12 +15,11 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 }).addTo(mymap);
 
 resultsArr.forEach(function(place, i){
-        var latlong = place.lat_long.slice(1, -1);
-        var llArr = latlong.split(",");
-        llArr[0] = (llArr[0] * 1);
-        llArr[1] = (llArr[1] * 1);
-        var marker = L.marker(llArr).addTo(mymap);
-        console.log(`/place/${place.name}`);
+    console.log(place.lat_long);
+        var latlongArr = place.lat_long.split(",");
+        latlongArr[0] = (latlongArr[0] * 1);
+        latlongArr[1] = (latlongArr[1] * 1);
+        var marker = L.marker(latlongArr).addTo(mymap);
         marker.bindPopup(`<a href="/place/${place.name}">${place.name}</a>` + ", " + place.address)
     });
 

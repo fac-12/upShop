@@ -8,8 +8,7 @@
     {{#each resultsArr}}
         <section class="results">
           <p><a href = '/place/{{ name }}'>{{ name }}</a></p>
-          <p>{{ lat_long }} {{ ../currentLL }}</p>
-          <p>{{ hours }}</p>
+          <p>{{ distance lat_long ../currentLL }}</p>
       </section>
       {{/each}}
     {{else}}
@@ -24,7 +23,8 @@
 <script>
 
 
-var resultsArr = JSON.parse('{{{json resultsArr}}}');
+var resultsArr = {{{json resultsArr}}};
+var currentLL = JSON.parse('{{{json currentLL}}}');
 
 </script>
 
