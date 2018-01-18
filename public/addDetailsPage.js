@@ -6,10 +6,14 @@ var values = document.getElementsByName('value[]');
 
 // function to prevent user submitting entry without selecting at least one values
 
-form.addEventListener("click", function () {
+form.addEventListener("submit", function (e) {
   var checked = [];
   values.forEach(a => {
-    isChecked.push(a.checked);
+    checked.push(a.checked)
   })
- if (isChecked.every())
-})
+
+  if (!checked.includes(true)) {
+    e.preventDefault();
+   alert('Please select at least one value');
+  }
+});
