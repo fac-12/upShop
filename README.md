@@ -6,7 +6,7 @@ _Add value to your next purchase_
 
 _Make every purchase count_
 
-[UpShop App](https://upshop.herokuapp.com/)
+Check out the app here: [UpShop App](https://upshop.herokuapp.com/)
 
 ## To run the app
 The app has been built for smart phones.
