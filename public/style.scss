@@ -123,7 +123,6 @@ textarea {
 
   a:click {
     text-decoration: underline;
-
   }
 }
 
@@ -147,7 +146,7 @@ textarea {
     width: 75vw;
     height: 25vh;
     border-radius: 5px;
-
+    font-size: $medium-font * 1.5;
 }
 
 // search
@@ -160,6 +159,7 @@ textarea {
     display: block;
     height: 82%;
 }
+
 .addBusiness__form {
   width: 75%;
   margin: auto;
@@ -247,9 +247,11 @@ textarea {
 
 
 .catSearch {
+
   display: flex;
   flex-wrap:wrap;
   justify-content: space-between;
+
 }
 
 
@@ -262,8 +264,10 @@ textarea {
   border-radius: $border-radius;
   text-align: center;
   display: table;
+  box-sizing: border-box;
 
 }
+
 .choose_Category {
 
   width: $main-container-width;
@@ -317,6 +321,7 @@ textarea {
 
 
 }
+
 
 //Results list
 

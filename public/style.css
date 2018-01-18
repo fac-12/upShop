@@ -91,7 +91,8 @@ textarea {
   background-color: #f7d05c;
   width: 75vw;
   height: 25vh;
-  border-radius: 5px; }
+  border-radius: 5px;
+  font-size: 1.8rem; }
 
 .addBusiness__container {
   text-align: center;
@@ -163,7 +164,8 @@ textarea {
   margin-top: 10%;
   border-radius: 1.5%;
   text-align: center;
-  display: table; }
+  display: table;
+  box-sizing: border-box; }
 
 .choose_Category {
   width: 80%;
