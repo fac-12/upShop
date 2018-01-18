@@ -4,6 +4,7 @@ var categoryBtnArr = Array.from(categoryBtn);
 var getLocation = document.getElementById('getLocation');
 var postcode = document.getElementById('postcode');
 
+
 getLocation.addEventListener('click', function() {
   function success(pos) {
   fetch('http://api.postcodes.io/postcodes?lon='+pos.coords.longitude+'&lat='+pos.coords.latitude)
