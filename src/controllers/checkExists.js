@@ -48,9 +48,10 @@ else {
             };
 
             const placeName = placeObj.name;
+            const placeAddress = placeObj.address;
 
             res.render('addMoreDetails', {
-              encodedObj, placeName, layout: 'navHome',
+              encodedObj, placeName, placeAddress, layout: 'navHome',
             });
           } else {
             res.render('businessExists', {

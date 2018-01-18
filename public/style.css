@@ -150,6 +150,34 @@ textarea {
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 3%; }
+  .addMoreDetails__container .moreDetails_address {
+    font-size: 1rem; }
+  .moreDetails__section_name {
+    background-color: #F1C373;
+    padding: 1rem; }
+  .addMoreDetails__container .description__text, .addMoreDetails__container .comment__text {
+    background-color: #C4C4C4;
+    height: 5rem;
+    border: none; }
+  .addMoreDetails__container .hours {
+    display: flex;
+    flex-direction: column; }
+  .addMoreDetails__container .time {
+    display: flex;
+    justify-content: space-between; }
+  .addMoreDetails__container .category__section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .addMoreDetails__container .submit {
+    display: flex;
+    justify-content: center; }
+  .addMoreDetails__container .submit__btn {
+    background-color: #F1C373;
+    font-family: "Assistant", Helvetica, sans-serif;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 10rem; }
 
 .messageBox {
   width: 80%;
@@ -217,5 +245,3 @@ textarea {
     font-weight: bold;
     text-align: center;
     line-height: 3; }
-
-/*# sourceMappingURL=style.css.map */

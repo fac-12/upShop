@@ -239,6 +239,48 @@ textarea {
        font-weight: bold;
        margin-bottom: 3%;
      }
+     .moreDetails_address{
+       font-size: 1rem;
+     }s
+
+     .moreDetails__section_name{
+      background-color: #F1C373;
+      padding: 1rem;
+     }
+
+     .description__text, .comment__text{
+       background-color: $input-fill;
+       height: 5rem;
+       border: none;
+     }
+
+     .hours{
+       display: flex;
+       flex-direction: column;
+     }
+
+     .time{
+       display: flex;
+       justify-content: space-between;
+     }
+
+     .category__section{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+     }
+
+.submit{
+  display: flex;
+  justify-content: center;
+}
+.submit__btn{
+  background-color: $upshop-yellow;
+  font-family: $main-font;
+  padding: 1rem;
+  font-size: 1rem;
+  width: 10rem;
+}
 
 }
 
