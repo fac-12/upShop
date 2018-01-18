@@ -7,6 +7,12 @@ body {
 .displayNone {
   display: none; }
 
+input {
+  border: none; }
+
+button {
+  color: #494A4C; }
+
 textarea {
   width: 100%; }
 
@@ -21,7 +27,7 @@ textarea {
   bottom: 0;
   height: 18%;
   text-align: center;
-  border-top: 4px solid #F1C373;
+  border-top: 4px solid #f7d05c;
   background-color: white; }
 
 .navbarMap {
@@ -30,7 +36,7 @@ textarea {
   bottom: 0;
   height: 18%;
   text-align: center;
-  border-top: 4px solid #F1C373;
+  border-top: 4px solid #f7d05c;
   background-color: white; }
 
 .navHomeList {
@@ -39,11 +45,11 @@ textarea {
   bottom: 0;
   height: 18%;
   text-align: center;
-  border-top: 4px solid #F1C373;
+  border-top: 4px solid #f7d05c;
   background-color: white; }
 
 .map {
-  height: 430px;
+  height: 423px;
   display: none; }
 
 .list_img {
@@ -62,6 +68,13 @@ textarea {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center; }
+  .homePage__buttonContainer a {
+    color: #494A4C;
+    text-decoration: none; }
+  .homePage__buttonContainer a:hover {
+    text-decoration: underline; }
+  .homePage__buttonContainer a:click {
+    text-decoration: underline; }
 
 .homePage__header {
   height: 15%; }
@@ -72,21 +85,13 @@ textarea {
     line-height: 2; }
 
 .homePage__button {
-  background-color: #F1C373;
-  width: 64%;
-  padding-top: 21%;
-  padding-bottom: 21%;
-  text-align: center;
-  border-radius: 5px; }
-
-.catSearch {
   display: flex;
-  flex-direction: column; }
-
-.optionBox {
-  height: 8rem;
-  width: 8rem;
-  background-color: #F1C373; }
+  align-items: center;
+  justify-content: center;
+  background-color: #f7d05c;
+  width: 75vw;
+  height: 25vh;
+  border-radius: 5px; }
 
 .addBusiness__container {
   text-align: center;
@@ -115,7 +120,7 @@ textarea {
     text-align: center;
     font-size: 1.2rem;
     color: #494A4C;
-    background-color: #F1C373; }
+    background-color: #f7d05c; }
 
 .addMoreDetails__container {
   height: 82%;
@@ -146,26 +151,51 @@ textarea {
   margin: auto;
   text-align: center; }
 
+.catSearch {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.optionBox {
+  height: 8rem;
+  width: 8rem;
+  background-color: #f7d05c;
+  margin-top: 10%;
+  border-radius: 1.5%;
+  text-align: center;
+  display: table; }
+
 .choose_Category {
   width: 80%;
-  margin: auto; }
-  .choose_Category .categories {
-    display: flex;
-    flex-wrap: wrap;
-    height: 20%;
-    width: 20%; }
+  margin-bottom: 10%;
+  margin-left: auto;
+  margin-right: auto; }
+  .choose_Category span {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center; }
   .choose_Category input {
     display: block;
     padding: 4%;
     background-color: #C4C4C4;
-    font-size: 1rem; }
+    font-size: 1rem;
+    display: none; }
+  .choose_Category .postcode__submit__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .choose_Category .postcode__submit__container button {
+      background-color: #f7d05c;
+      width: 35%;
+      margin: 5% auto;
+      padding: 3%;
+      border: none; }
   .choose_Category .location_img {
     height: 40px;
     width: auto; }
   .choose_Category .postcode__submit {
-    display: inline; }
-  .choose_Category button {
-    background-color: #F1C373; }
+    display: inline;
+    width: 70%; }
 
 .listResults {
   display: flex;
@@ -180,7 +210,7 @@ textarea {
   font-family: "Assistant", Helvetica, sans-serif;
   font-size: 1.2rem;
   border-style: solid;
-  border-color: #F1C373;
+  border-color: #f7d05c;
   border-radius: 1.5%; }
   .result a {
     color: inherit;
@@ -198,14 +228,17 @@ textarea {
 
 .place_header {
   height: 18%;
-  background-color: #F1C373; }
+  width: 100%;
+  display: table;
+  background-color: #f7d05c; }
   .place_header h2 {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 2.5rem;
     text-transform: uppercase;
     font-weight: bold;
-    text-align: center;
-    line-height: 3; }
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,64 +1,67 @@
   <div class="addMoreDetails__container">
 
-<form class="moreDetails" id="moreDetails" method="GET" action="/add/details">
-
-  <div class="moreDetails_name">
+<form class="moreDetails" id="moreDetails" method="GET" action="/add/details">  <div class="moreDetails_name">
     <input class="displayNone" type="textarea" name="name" value={{ encodedObj.name }}> {{ placeName }}
   </div>
-   <input class="displayNone" type="textarea" name="address" value={{ encodedObj.address }}>
+  <div class="moreDetails_address">
+   <input class="displayNone" type="textarea" name="address" value={{ encodedObj.address }}> {{ placeAddress }}
+   </div>
    <input class="displayNone" type="textarea" name="postcode" value={{ encodedObj.postcode }}>
    <input class="displayNone" type="textarea" name="lat_long" value={{ encodedObj.lat_long}}>
+</section>
+
+<br>
 
 <label for="website">Website</label>
 <input type="url" name="website" placeholder="http://www...">
 
-<div class="Hours">
-
     <h3>Opening Hours</h3>
+    <div class="hours">
         <div class="time">
           <label for="mondayo">Monday</label>
-          <input type="time" name="mondayo">
-          <input type="time" name="mondayc">
+          <input class="time__input" type="time" name="mondayo">
+          <input class="time__input" type="time" name="mondayc">
         </div>
 
         <div class="time">
           <label for="tueso">Tuesday</label>
-          <input type="time" name="tueso">
-          <input type="time" name="tuesc">
+          <input class="time__input" type="time" name="tueso">
+          <input class="time__input" type="time" name="tuesc">
         </div>
 
         <div class="time">
           <label for="wedso">Wednesday</label>
-          <input type="time" name="wedso">
-          <input type="time" name="wedsc">
+          <input class="time__input" type="time" name="wedso">
+          <input class="time__input" class="time__input" type="time" name="wedsc">
         </div>
 
         <div class="time">
           <label for="thurso">Thursday</label>
-          <input type="time" name="thurso">
-          <input type="time" name="thursc">
+          <input class="time__input" type="time" name="thurso">
+          <input class="time__input" type="time" name="thursc">
         </div>
 
         <div class="time">
           <label for="frio">Friday</label>
-          <input type="time" name="frio">
-          <input type="time" name="fric">
+          <input class="time__input" type="time" name="frio">
+          <input class="time__input" type="time" name="fric">
         </div>
 
         <div class="time">
           <label for="sato">Saturday</label>
-          <input type="time" name="sato">
-          <input type="time" name="satc">
+          <input class="time__input" type="time" name="sato">
+          <input class="time__input" type="time" name="satc">
         </div>
 
         <div class="time">
           <label for="monday">Sunday</label>
-          <input type="time" name="suno">
-          <input type="time" name="sunc">
+          <input class="time__input" type="time" name="suno">
+          <input class="time__input" type="time" name="sunc">
         </div>
 </div>
 
 	<h3>Category:</h3>
+  <section class="category__section">
  		 <input type="radio" name="category" value="Clothes">
    	 <label for="clothes">Clothes</label>
    		 <input type="radio" name="category" value="Bars and Restaurants">
@@ -71,36 +74,63 @@
    	 <label for="Entertainment">Entertainment</label>
    	 	  <input type="radio" name="category" value="Other">
    	 <label for="Other">Other</label>
+      </section>
 
   	<h3>Description:</h3>
-  	<textarea type="text" name="description"></textarea>
+  	<textarea class="description__text" type="text" name="description"></textarea>
 
 	<h3>Values:</h3>
- 		    <input type="checkbox" name="value[]" value="Organic">
-   	 <label for="Organic">Organic</label>
-   		  <input type="checkbox" name="value[]" value="Eco-conscious">
-   	 <label for="Eco">Eco</label>
-   	 	   <input type="checkbox" name="value[]" value="Living Wage">
-   	 <label for="Livingwage">Living Wage</label>
-         <input type="checkbox" name="value[]" value="Community">
-   	 <label for="Community">Community focussed</label>
-   	  	 <input type="checkbox" name="value[]" value="Veg*n">
-   	 <label for="Veg*n">Veg*n</label>
-   	 	  <input type="checkbox" name="value[]" value="Fairtrade">
-   	 <label for="Fairtrade">Fairtrade</label>
-   	 	  <input type="checkbox" name="value[]" value="Non-profit">
-   	 <label for="Non-profit">Non-profit</label>
-   	     <input type="checkbox" name="value[]" value="Social Enterprise">
-   	 <label for="Socialenterprise">Social Enterprise</label>
-   	     <input type="checkbox" name="value[]" value="Bulk Bins">
-   	 <label for="Bulkbins">Bulk bins available</label>
-   	     <input type="checkbox" name="value[]" value="Tackling Waste">
-   	 <label for="Tacklingwaste">Tackling waste</label>
+  <section class="values__section">
+    <label class="container" for="Organic">Organic
+ 		    <span class="checkmark"><input type="checkbox" name="value[]" value="Organic">
+         </span>
+   	 </label>
+      <label class="container" for="Eco">Eco
+   		  <span class="checkmark"><input type="checkbox" name="value[]" value="Eco-conscious">
+         </span>
+   	 </label>
+      <label class="container" for="Livingwage">Living Wage
+   	 	   <span class="checkmark"><input type="checkbox" name="value[]" value="Living Wage">
+           </span>
+   	 </label>
+      <label class="container" for="Community">Community focussed
+         <span class="checkmark"><input type="checkbox" name="value[]" value="Community">
+         </span>
+   	 </label>
+
+      <label class="container" for="Veg*n">Veg*n
+   	  	 <span class="checkmark"><input type="checkbox" name="value[]" value="Veg*n">
+          </span>
+   	 </label>
+
+      <label class="container" for="Fairtrade">Fairtrade
+   	 	  <span class="checkmark"><input type="checkbox" name="value[]" value="Fairtrade">
+          </span>
+   	 </label>
+      <label class="container" for="Non-profit">Non-profit
+   	 	  <span class="checkmark"><input type="checkbox" name="value[]" value="Non-profit">
+          </span>
+   	 </label>
+      <label class="container" for="Socialenterprise">Social Enterprise
+   	     <span class="checkmark"><input type="checkbox" name="value[]" value="Social Enterprise">
+          </span>
+   	 </label>
+      <label class="container" for="Bulkbins">Bulk bins available
+   	     <span class="checkmark"><input type="checkbox" name="value[]" value="Bulk Bins">
+          </span>
+   	 </label>
+      <label class="container" for="Tacklingwaste">Tackling waste
+   	     <span class="checkmark"><input type="checkbox" name="value[]" value="Tackling Waste">
+          </span>
+   	 </label>
+</section>
 
   	<h3>Comment:</h3>
-  	<textarea type="text" name="comment"></textarea>
-<div id="errorMsg"></div>
-  	<input type="submit" name="Submit" id="submitForm">
+  	<textarea class="comment__text" type="text" name="comment"></textarea>
+
+    <section class="submit">
+  	<input class="submit__btn" id="submitForm" type="submit" name="Submit">
+    </section>
  </form>
 
  </div>

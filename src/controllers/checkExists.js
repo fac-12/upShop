@@ -2,6 +2,17 @@ const queries = require('./queries');
 const fetch = require('isomorphic-fetch');
 
 exports.get = (req, res) => {
+
+    if(req.query.name === undefined) {
+  const err = 'You need to fill in some details!';
+  res.render('error', {
+            err,
+            layout: 'error',
+          });
+}
+
+else {
+
   const placeObj = {
     name: req.query.name,
     address: req.query.address,
@@ -37,9 +48,10 @@ exports.get = (req, res) => {
             };
 
             const placeName = placeObj.name;
+            const placeAddress = placeObj.address;
 
             res.render('addMoreDetails', {
-              encodedObj, placeName, layout: 'navHome',
+              encodedObj, placeName, placeAddress, layout: 'navHome',
             });
           } else {
             res.render('businessExists', {
@@ -56,5 +68,6 @@ exports.get = (req, res) => {
       res.render('error', { err,
         layout: 'error',
 });
-    });
+   });
+};
 };
