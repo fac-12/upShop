@@ -25,7 +25,7 @@ resultsArr.forEach(function(place, i){
 
 listImg.addEventListener("click", function(e){
     e.preventDefault();
-    mapImg.style.display = "block";
+    mapImg.style.display = "inline-block";
     listImg.style.display = "none";
     mapDiv.style.display = "none";
     listResults.style.display = "block";
@@ -35,7 +35,7 @@ mapImg.addEventListener("click", function(e){
     e.preventDefault();
     mapImg.style.display = "none";
     listResults.style.display = "none";
-    listImg.style.display = "block";
+    listImg.style.display = "inline-block";
     mapDiv.style.display = "block";
     mymap.invalidateSize();
 })
