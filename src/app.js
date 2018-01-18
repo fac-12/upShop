@@ -3,13 +3,11 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
 
-const router = require('./controllers/index');
 const controllers = require('./controllers');
 const helpers = require('./views/helpers/index');
 
 const app = express();
 
-app.use(router);
 app.use(controllers);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
