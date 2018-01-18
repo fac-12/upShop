@@ -111,6 +111,20 @@ textarea {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
+  a {
+    color: $upshop-grey;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  a:click {
+    text-decoration: underline;
+
+  }
 }
 
 .homePage__header{
@@ -126,12 +140,14 @@ textarea {
      }
 }
 .homePage__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: $upshop-yellow;
-    width: 64%;
-    padding-top: 21%;
-    padding-bottom: 21%;
-    text-align: center;
+    width: 75vw;
+    height: 25vh;
     border-radius: 5px;
+
 }
 
 // search
