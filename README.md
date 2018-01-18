@@ -1,8 +1,14 @@
 
-# upShop ⬆️
+# upShop ⬆️ [UpShop App](https://upshop.herokuapp.com/)
 [![Join the chat at https://gitter.im/upShopChat/Lobby](https://badges.gitter.im/upShopChat/Lobby.svg)](https://gitter.im/upShopChat/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 _Add value to your next purchase_
+
 _Make every purchase count_
+
+## To run the app
+The app has been built for smart phones.
+You can view the app by right clicking on the page and selecting 'Inspect'.
+Then toggle the device toolbar to a phone device.
 
 ## MVP
 An app that allows the user to search for businesses that reflect their values as well as contribute to the upShop community by adding/editing businesses.
