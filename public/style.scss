@@ -299,6 +299,8 @@ textarea {
 .place_details {
   width: $main-container-width;
   margin: auto;
+  height: fit-content;
+  padding-bottom: 36%;
 
   .icon {
     height: 30px;

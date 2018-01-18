@@ -189,7 +189,9 @@ textarea {
 
 .place_details {
   width: 80%;
-  margin: auto; }
+  margin: auto;
+  height: fit-content;
+  padding-bottom: 36%; }
   .place_details .icon {
     height: 30px;
     width: auto; }
