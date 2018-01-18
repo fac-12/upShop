@@ -1,19 +1,17 @@
 
-<!-- <main> -->
+<main class="placePage"> 
 	<header class = "place_header">
 			<h2>{{ placeResults.name }}</h2>
 	</header>
 <div class = place_details>
-	<p><a href="//{{placeResults.website}}" target = "_blank">{{ placeResults.website }}</a></p>
+	<a href="//{{placeResults.website}}" target = "_blank"><p>{{ placeResults.website }}</p></a>
 	<p>{{ placeResults.description }}</p>
-	<div class="">
-		<img src="/assets/droppin-grey.png" class = "icon">{{ placeResults.address }}
+	<div class="placeAddress">
+		<img src="/assets/droppin-grey.png" class = "icon"><p>{{ placeResults.address }}</p>
 	</div>
-<div class="">
-
-</div>
-	<img src="/assets/clock.png" class = "icon">Hours
-	<div class="times"></div>
+<div class="placeHours">
+	<img src="/assets/clock.png" class = "icon">
+	<div class="times">
 	<p>Monday {{listtimes placeHours.monday}}</p>
 	<p>Tuesday {{listtimes placeHours.tuesday}}</p>
 	<p>Wednesday {{listtimes placeHours.wednesday}}</p>
@@ -21,11 +19,12 @@
 	<p>Friday {{listtimes placeHours.friday}}</p>
 	<p>Saturday {{listtimes placeHours.saturday}}</p>
 	<p>Sunday {{listtimes placeHours.sunday}}</p>
-<!-- </main> -->
+	</div>
+</div>
 
 <section class="values">
 	<header>
-			<h3>Values</h3>
+			<h3>VALUES</h3>
 	</header>
 
 	<p></p>
@@ -35,4 +34,5 @@
 	{{/each }}
 
 </section>
+</main>
 </div>
