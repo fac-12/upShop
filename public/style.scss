@@ -130,6 +130,19 @@ body {
     border-radius: 5px;
 }
 
+// search
+.catSearch {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.optionBox {
+
+  height: 8rem;
+  width: 8rem;
+  background-color: $upshop-yellow;
+}
 //Add business
 
 .addBusiness__container {
