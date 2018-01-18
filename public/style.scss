@@ -325,7 +325,30 @@ textarea {
 
 //Results list
 
+.listMain {
 
+  header {
+  height: 18vh;
+  width: 100%;
+  display: table;
+  background-color: $upshop-yellow;
+
+   h2 {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: $place-heading-size;
+      text-transform: uppercase;
+      font-weight: bold;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+
+    }
+  }
+
+
+
+}
 .listResults {
     display: flex;
     flex-direction: column;
@@ -355,6 +378,12 @@ textarea {
 
 //Place Details
 
+.placePage {
+
+  p {
+  text-align: center;
+  }
+
 .place_details {
   width: $main-container-width;
   margin: auto;
@@ -366,6 +395,42 @@ textarea {
     width: auto;
   }
 
+  .placeAddress{
+  height: 10vh;
+  display: flex;
+  align-items: center;
+
+      p {
+      text-align: left;
+      height: 100%;
+      margin: 0;
+      padding-top: 13%;
+
+      }
+  }
+
+  .placeHours {
+  display: flex;
+
+    .times {
+    padding-top: 7%;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+      p{
+      text-align: left;
+      margin: 0;
+      padding: 2%;
+      }
+    }
+  }
+    h3 {
+    text-align: center;
+    padding: 2%;
+    background-color: $upshop-yellow; 
+    }
 }
 
 .place_header {
@@ -385,5 +450,10 @@ textarea {
       text-align: center;
 
     }
+
+}
+
+
+
 
 }

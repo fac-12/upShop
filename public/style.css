@@ -199,6 +199,21 @@ textarea {
     display: inline;
     width: 70%; }
 
+.listMain header {
+  height: 18vh;
+  width: 100%;
+  display: table;
+  background-color: #f7d05c; }
+  .listMain header h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center; }
+
 .listResults {
   display: flex;
   flex-direction: column;
@@ -219,21 +234,47 @@ textarea {
     font-weight: bolder;
     text-decoration: none; }
 
-.place_details {
+.placePage p {
+  text-align: center; }
+.placePage .place_details {
   width: 80%;
   margin: auto;
   height: fit-content;
   padding-bottom: 36%; }
-  .place_details .icon {
+  .placePage .place_details .icon {
     height: 30px;
     width: auto; }
-
-.place_header {
-  height: 18%;
+  .placePage .place_details .placeAddress {
+    height: 10vh;
+    display: flex;
+    align-items: center; }
+    .placePage .place_details .placeAddress p {
+      text-align: left;
+      height: 100%;
+      margin: 0;
+      padding-top: 13%; }
+  .placePage .place_details .placeHours {
+    display: flex; }
+    .placePage .place_details .placeHours .times {
+      padding-top: 7%;
+      width: 50vw;
+      display: flex;
+      flex-direction: column;
+      align-items: left; }
+      .placePage .place_details .placeHours .times p {
+        text-align: left;
+        margin: 0;
+        padding: 2%; }
+  .placePage .place_details h3 {
+    text-align: center;
+    padding: 2%;
+    background-color: #f7d05c; }
+.placePage .place_header {
+  height: 18vh;
   width: 100%;
   display: table;
   background-color: #f7d05c; }
-  .place_header h2 {
+  .placePage .place_header h2 {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 2.5rem;
