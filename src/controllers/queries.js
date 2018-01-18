@@ -6,8 +6,14 @@ const getPlacesByCat = (category) => {
 
 const checkPlace = (formData) => {
   return db.query(`
-  SELECT CASE WHEN EXISTS (SELECT name FROM places WHERE name= ($1) AND address=($2) AND postcode=($3)) THEN CAST (1 AS BIT) ELSE CAST(0 AS BIT) END`, [formData.name, formData.address, formData.postcode]);
+  SELECT CASE WHEN EXISTS (SELECT name FROM places WHERE name = ($1) AND address=($2) AND postcode=($3)) THEN CAST (1 AS BIT) ELSE CAST(0 AS BIT) END`, [formData.name, formData.address, formData.postcode]);
 };
+
+const checkPlaceExists = (name) => {
+  return db.query(`
+  SELECT CASE WHEN EXISTS (SELECT name FROM places WHERE name = ($1)) THEN CAST (1 AS BIT) ELSE CAST (0 AS BIT) END`, [name]);
+
+}
 
 const getPlace = (name) => {
   return db.query(`
@@ -47,6 +53,7 @@ module.exports = {
   getPlacesByCat,
   checkPlace,
   getPlace,
+  checkPlaceExists,
   addPlace,
   getValues,
   getPlacesByStandard,
