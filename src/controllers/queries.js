@@ -1,7 +1,6 @@
 const db = require('../database/dbConnection');
 
 const getPlacesByCat = (category) => {
-  // console.log('queries.js ', category);
   return db.query(`SELECT * FROM places INNER JOIN category_connections ON category_connections.place_id = places.id WHERE category_connections.category_id = ${category}`);
 };
 
