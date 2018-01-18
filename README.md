@@ -1,9 +1,12 @@
 
-# upShop ⬆️ [UpShop App](https://upshop.herokuapp.com/)
+# upShop ⬆️ 
 [![Join the chat at https://gitter.im/upShopChat/Lobby](https://badges.gitter.im/upShopChat/Lobby.svg)](https://gitter.im/upShopChat/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 _Add value to your next purchase_
 
 _Make every purchase count_
+
+[UpShop App](https://upshop.herokuapp.com/)
 
 ## To run the app
 The app has been built for smart phones.
