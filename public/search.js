@@ -1,23 +1,35 @@
 /* eslint-disable */
 var getLocation = document.getElementById('getLocation');
 var postcode = document.getElementById('postcode');
-var optionBox1 = document.getElementById('optionBox1');
-var optionBox2 = document.getElementById('optionBox2');
-var optionBox3 = document.getElementById('optionBox3');
-var optionBox4 = document.getElementById('optionBox4');
-var optionBox5 = document.getElementById('optionBox5');
-var optionBox6 = document.getElementById('optionBox6');
 
+var optionBoxes = document.getElementsByClassName('optionBox');
+var optionBoxArray = Array.from(optionBoxes);
 
-var radio1 = document.getElementById('radio1');
-var radio2 = document.getElementById('radio2');
-var radio3 = document.getElementById('radio3');
-var radio4 = document.getElementById('radio4');
-var radio5 = document.getElementById('radio5');
-var radio6 = document.getElementById('radio6');
+var radioBoxes = document.getElementsByClassName('radioBtn');
+var radioBoxArray = Array.from(radioBoxes);
+
+optionBoxArray.forEach(function(box){
+  box.addEventListener("click", function(e){
+    e.target.parentNode.previousSibling.checked = true;
+  })
+})
+
+window.addEventListener("click", function(){
+  radioBoxArray.forEach(function(radio){
+    if(radio.checked === true) {
+    radio.nextSibling.style.backgroundColor = "white";
+    radio.nextSibling.style.border = "2px solid rgb(247, 208, 92)";
+    }
+    else {
+    radio.nextSibling.style.backgroundColor = "rgb(247, 208, 92)";
+    radio.nextSibling.style.border = "none";
+    }
+  });
+});
 
 
 getLocation.addEventListener('click', function() {
+  getLocation.style.opacity = "0.5";
   function success(pos) {
   fetch('https://api.postcodes.io/postcodes?lon='+pos.coords.longitude+'&lat='+pos.coords.latitude)
          .then(response => response.json()
@@ -29,7 +41,7 @@ getLocation.addEventListener('click', function() {
 
   }
   function error(err) {
-    console.log('error= ', err);
+    alert("You don't have geolocation enabled, sorry! Try typing in your postcode instead.")
   }
 var options = {
   enableHighAccuracy: true,
@@ -41,20 +53,17 @@ var options = {
 
 
 
-optionBox1.addEventListener('click', function(){
-    if(radio1.checked){
-      radio1.checked = false;
-      optionBox1.style.background = "yellow";
-    } else {
-      radio1.checked = true;
-      optionBox1.style.background = "red";
-    }
 
-    alert(radio1.checked);
-});
+// optionBox1.addEventListener('click', function(){
+//     if(radio1.checked){
+//       radio1.checked = false;
+//       optionBox1.style.background = "yellow";
+//     } else {
+//       radio1.checked = true;
+//       optionBox1.style.background = "red";
+//     }
 
-window.addEventListener('unhandledrejection', function(event) {
-  // the event object has two special properties:
-  alert(event.promise); // [object Promise] - the promise that generated the error
-  alert(event.reason); // Error: Whoops! - the unhandled error object
-});
+//     alert(radio1.checked);
+// });
+
+
