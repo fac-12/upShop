@@ -12,7 +12,7 @@ exports.get = (req, res) => {
   const pc = encodeURI(req.query.postcode);
 
   //Calls postcodes.io API to convert postcode into lat long
-  fetch(`http://api.postcodes.io/postcodes/${pc}`)
+  fetch(`https://api.postcodes.io/postcodes/${pc}`)
     .then((response) => {
       if (response.status >= 400) {
         const errorMessage = 'This postcode does not exist';
