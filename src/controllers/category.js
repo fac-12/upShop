@@ -4,6 +4,15 @@ const queries = require('./queries');
 
 exports.get = (req,res) => {
 
+  if(req.query.category === undefined) {
+  const err = 'You need to choose a category first!';
+  res.render('error', {
+            err,
+            layout: 'error',
+          });
+}
+
+  else {
   const cat = req.query.category;
   const currentPC = (req.query.postcode).replace(" ", "").toString();
 
@@ -31,4 +40,5 @@ exports.get = (req,res) => {
         layout: 'error',
     })
   });
+};
 };
