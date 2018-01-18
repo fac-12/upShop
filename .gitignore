@@ -58,3 +58,6 @@ typings/
 *.env
 config.env
 package-lock.json
+
+#sass-cache
+.sass-cache/
