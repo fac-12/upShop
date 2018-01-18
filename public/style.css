@@ -79,6 +79,15 @@ textarea {
   text-align: center;
   border-radius: 5px; }
 
+.catSearch {
+  display: flex;
+  flex-direction: column; }
+
+.optionBox {
+  height: 8rem;
+  width: 8rem;
+  background-color: #F1C373; }
+
 .addBusiness__container {
   text-align: center;
   display: block;
