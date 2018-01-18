@@ -7,7 +7,7 @@ exports.get = (req,res) => {
   const cat = req.query.category;
   const currentPC = (req.query.postcode).replace(" ", "").toString();
 
-  fetch(`http://api.postcodes.io/postcodes/${currentPC}`)
+  fetch(`https://api.postcodes.io/postcodes/${currentPC}`)
     .then((response) => {
       if (response.status >= 400) {
         const errorMessage = 'This postcode does not exist';
