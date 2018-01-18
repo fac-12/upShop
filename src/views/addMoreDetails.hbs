@@ -1,9 +1,6 @@
-<div class="addMoreDetails__container">
+  <div class="addMoreDetails__container">
 
-<form class="moreDetails" method="GET" action="/add/details">
-  
-  <section class="moreDetails__section_name">
-  <div class="moreDetails_name">
+<form class="moreDetails" id="moreDetails" method="GET" action="/add/details">  <div class="moreDetails_name">
     <input class="displayNone" type="textarea" name="name" value={{ encodedObj.name }}> {{ placeName }}
   </div>
   <div class="moreDetails_address">
@@ -130,10 +127,11 @@
 
   	<h3>Comment:</h3>
   	<textarea class="comment__text" type="text" name="comment"></textarea>
-    
+
     <section class="submit">
-  	<input class="submit__btn" type="submit" name="Submit">
+  	<input class="submit__btn" id="submitForm" type="submit" name="Submit">
     </section>
  </form>
 
  </div>
+ <script type='text/javascript' src='/addDetailsPage.js'></script>
