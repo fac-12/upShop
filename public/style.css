@@ -62,6 +62,13 @@ textarea {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center; }
+  .homePage__buttonContainer a {
+    color: #494A4C;
+    text-decoration: none; }
+  .homePage__buttonContainer a:hover {
+    text-decoration: underline; }
+  .homePage__buttonContainer a:click {
+    text-decoration: underline; }
 
 .homePage__header {
   height: 15%; }
@@ -73,11 +80,14 @@ textarea {
 
 .homePage__button {
   background-color: #F1C373;
-  width: 64%;
-  padding-top: 21%;
-  padding-bottom: 21%;
-  text-align: center;
-  border-radius: 5px; }
+  width: 75vw;
+  height: 25vh;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .homePage__button p {
+    font-size: 1.7em; }
 
 .catSearch {
   display: flex;

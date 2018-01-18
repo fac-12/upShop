@@ -3,7 +3,8 @@ const queries = require('./queries');
 
 exports.get = (req, res) => {
 
-if(req.query.length === undefined) {
+if(req.query.name === undefined) {
+
   const err = 'You need to fill in some information to add a place!';
   res.render('error', {
             err,

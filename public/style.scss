@@ -17,9 +17,11 @@ $main-container-width: 80%;
 
 $info-element-padding-top: 2rem;
 //Mobile View
+
+$fullView: 100vh;
 body {
   margin: 0;
-  height: 100vh;
+  height: $fullView;
   font-family: $main-font;
   color: $upshop-grey;
 }
@@ -104,6 +106,19 @@ textarea {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
+  a {
+  color: $upshop-grey;
+  text-decoration: none;
+  }
+
+  a:hover {
+  text-decoration: underline;
+  }
+
+  a:click {
+  text-decoration: underline;
+  }
 }
 
 .homePage__header{
@@ -120,11 +135,16 @@ textarea {
 }
 .homePage__button {
     background-color: $upshop-yellow;
-    width: 64%;
-    padding-top: 21%;
-    padding-bottom: 21%;
-    text-align: center;
+    width: 75vw;
+    height: 25vh;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+    font-size: 1.7em;
+    }
 }
 
 // search

@@ -3,7 +3,7 @@ const fetch = require('isomorphic-fetch');
 
 exports.get = (req, res) => {
 
-    if(req.query.length === undefined) {
+    if(req.query.name === undefined) {
   const err = 'You need to fill in some details!';
   res.render('error', {
             err,
