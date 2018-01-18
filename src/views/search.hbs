@@ -7,30 +7,36 @@
 
   <form class="catSearch" name="catSearch" method="GET" action="/search/category">
 
-    <input type="radio" class="categoryBtn" name="category" value="1"><div class="optionBox"><span>Clothes</span></div>
 
-    <input type="radio" class="categoryBtn" name="category" value="2"><div class="optionBox"><span>Bars and Restaurants</span></div>
+    <input type="radio" class="categoryBtn" id = "radio1" name="category" value="1"><div class="optionBox" id="optionBox1" ><span>Clothes</span></div>
 
-
-    <input type="radio" class="categoryBtn"name="category" value="3"><div class="optionBox"><span>Cafés</span></div>
+    <input type="radio" class="categoryBtn" id = "radio2" name="category" value="2"><div class="optionBox" id="optionBox2"><span>Bars and Restaurants</span></div>
 
 
-    <input type="radio" class="categoryBtn" name="category" value="4"><div class="optionBox"><span>Groceries</span></div>
+    <input type="radio" class="categoryBtn" id = "radio3" name="category" value="3"><div class="optionBox" id="optionBox3"><span>Cafés</span></div>
 
 
-    <input type="radio"class="categoryBtn" name="category" value="5"><div class="optionBox"><span>Entertainment</span></div>
+    <input type="radio" class="categoryBtn" id = "radio4" name="category" value="4"><div class="optionBox" id="optionBox4"><span>Groceries</span></div>
 
 
-    <input type="radio" class="categoryBtn" name="category" value="6"><div class="optionBox"><span>Other</span></div>
+    <input type="radio"class="categoryBtn" id = "radio5" name="category" value="5"><div class="optionBox" id="optionBox5"><span>Entertainment</span></div>
+
+
+    <input type="radio" class="categoryBtn"  id = "radio6" name="category" value="6"><div class="optionBox" id="optionBox6"><span>Other</span></div>
 
 
   </div>
 <h2>In...</h2>
+
+<div class="postcode__submit__container">
+
 <input type="text" id="postcode" class = "postcode__submit" placeholder="Enter postcode" name="postcode" required>
+
 <img class="location_img" id="getLocation" src="/assets/search-arrow.png">
 <button type="submit">Go!</button>
 </form>
 </main>
+</div>
 
 </div>
 

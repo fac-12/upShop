@@ -1,5 +1,5 @@
 //COLORS
-$upshop-yellow: #F1C373;
+$upshop-yellow: rgb(247, 208, 92);
 $upshop-grey: #494A4C;
 $input-fill: #C4C4C4;
 
@@ -17,11 +17,9 @@ $main-container-width: 80%;
 
 $info-element-padding-top: 2rem;
 //Mobile View
-
-$fullView: 100vh;
 body {
   margin: 0;
-  height: $fullView;
+  height: 100vh;
   font-family: $main-font;
   color: $upshop-grey;
 }
@@ -34,6 +32,13 @@ body {
 
 }
 
+input {
+  border:none;
+}
+
+button {
+  color: $upshop-grey;
+}
 textarea {
   width: 100%;
 }
@@ -80,7 +85,7 @@ textarea {
 //MAP
 
 .map {
-	height: 430px;
+	height: 423px;
 	display: none;
 }
 
@@ -108,16 +113,17 @@ textarea {
   align-items: center;
 
   a {
-  color: $upshop-grey;
-  text-decoration: none;
+    color: $upshop-grey;
+    text-decoration: none;
   }
 
   a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
   }
 
   a:click {
-  text-decoration: underline;
+    text-decoration: underline;
+
   }
 }
 
@@ -134,32 +140,18 @@ textarea {
      }
 }
 .homePage__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: $upshop-yellow;
     width: 75vw;
     height: 25vh;
     border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-    p {
-    font-size: 1.7em;
-    }
 }
 
 // search
-.catSearch {
-  display: flex;
-  flex-direction: column;
-}
 
-
-.optionBox {
-
-  height: 8rem;
-  width: 8rem;
-  background-color: $upshop-yellow;
-}
 //Add business
 
 .addBusiness__container {
@@ -239,48 +231,6 @@ textarea {
        font-weight: bold;
        margin-bottom: 3%;
      }
-     .moreDetails_address{
-       font-size: 1rem;
-     }s
-
-     .moreDetails__section_name{
-      background-color: #F1C373;
-      padding: 1rem;
-     }
-
-     .description__text, .comment__text{
-       background-color: $input-fill;
-       height: 5rem;
-       border: none;
-     }
-
-     .hours{
-       display: flex;
-       flex-direction: column;
-     }
-
-     .time{
-       display: flex;
-       justify-content: space-between;
-     }
-
-     .category__section{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-     }
-
-.submit{
-  display: flex;
-  justify-content: center;
-}
-.submit__btn{
-  background-color: $upshop-yellow;
-  font-family: $main-font;
-  padding: 1rem;
-  font-size: 1rem;
-  width: 10rem;
-}
 
 }
 
@@ -293,23 +243,64 @@ textarea {
 }
 
 //category search
+
+
+
+.catSearch {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+
+
+.optionBox {
+
+  height: 8rem;
+  width: 8rem;
+  background-color: $upshop-yellow;
+  margin-top: 10%;
+  border-radius: $border-radius;
+  text-align: center;
+  display: table;
+
+}
 .choose_Category {
 
   width: $main-container-width;
-  margin: auto;
+  margin-bottom: 10%;
+  margin-left: auto;
+  margin-right:auto;
 
-  .categories {
+    span {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+      // text-align: center;
+      // vertical-align: middle;
+    }
+    input {
+      display: block;
+      padding: 4%;
+      background-color: $input-fill;
+      font-size: $form-font;
+      display: none;
+    }
+
+    .postcode__submit__container {
     display: flex;
     flex-wrap: wrap;
-    height: 20%;
-    width: 20%;
-  }
+    justify-content: space-between;
 
-  input {
-    display: block;
-    padding: 4%;
-    background-color: $input-fill;
-    font-size: $form-font;
+
+      button {
+        background-color: $upshop-yellow;
+        width: 35%;
+        margin: 5% auto;
+        padding: 3%;
+        border: none;
+
+      }
+
   }
 
   .location_img {
@@ -319,11 +310,12 @@ textarea {
 
   .postcode__submit {
     display: inline;
+    width: 70%;
+
   }
 
-  button {
-    background-color: $upshop-yellow;
-  }
+
+
 }
 
 //Results list
@@ -368,10 +360,13 @@ textarea {
     height: 30px;
     width: auto;
   }
+
 }
 
 .place_header {
   height: 18%;
+  width: 100%;
+  display: table;
   background-color: $upshop-yellow;
 
     h2 {
@@ -380,11 +375,10 @@ textarea {
       font-size: $place-heading-size;
       text-transform: uppercase;
       font-weight: bold;
+      display: table-cell;
+      vertical-align: middle;
       text-align: center;
-      line-height: 3;
+
     }
 
 }
-
-
-
