@@ -54,16 +54,4 @@ var options = {
 
 
 
-// optionBox1.addEventListener('click', function(){
-//     if(radio1.checked){
-//       radio1.checked = false;
-//       optionBox1.style.background = "yellow";
-//     } else {
-//       radio1.checked = true;
-//       optionBox1.style.background = "red";
-//     }
-
-//     alert(radio1.checked);
-// });
-
 
