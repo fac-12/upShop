@@ -1,6 +1,6 @@
-<div class="addMoreDetails__container">
+  <div class="addMoreDetails__container">
 
-<form class="moreDetails" method="GET" action="/add/details">
+<form class="moreDetails" id="moreDetails" method="GET" action="/add/details">
 
   <div class="moreDetails_name">
     <input class="displayNone" type="textarea" name="name" value={{ encodedObj.name }}> {{ placeName }}
@@ -100,7 +100,8 @@
   	<h3>Comment:</h3>
   	<textarea type="text" name="comment"></textarea>
 
-  	<input type="submit" name="Submit">
+  	<input type="submit" name="Submit" id="submitForm">
  </form>
 
  </div>
+ <script type='text/javascript' src='/addDetailsPage.js'></script>
