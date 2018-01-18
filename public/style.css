@@ -270,7 +270,7 @@ textarea {
     padding: 2%;
     background-color: #f7d05c; }
 .placePage .place_header {
-  height: 18%;
+  height: 18vh;
   width: 100%;
   display: table;
   background-color: #f7d05c; }
