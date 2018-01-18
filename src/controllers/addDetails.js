@@ -2,6 +2,17 @@ const queries = require('./queries');
 
 
 exports.get = (req, res) => {
+
+if(req.query.name === undefined) {
+
+  const err = 'You need to fill in some information to add a place!';
+  res.render('error', {
+            err,
+            layout: 'error',
+          });
+}
+
+else{
   const hoursObj =
   {
     monday: [req.query.mondayo, req.query.mondayc],
@@ -40,4 +51,5 @@ exports.get = (req, res) => {
           });
         });
     });
+  };
 };

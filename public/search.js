@@ -19,7 +19,7 @@ var radio6 = document.getElementById('radio6');
 
 getLocation.addEventListener('click', function() {
   function success(pos) {
-  fetch('http://api.postcodes.io/postcodes?lon='+pos.coords.longitude+'&lat='+pos.coords.latitude)
+  fetch('https://api.postcodes.io/postcodes?lon='+pos.coords.longitude+'&lat='+pos.coords.latitude)
          .then(response => response.json()
              )
             .then(data => postcode.value = data.result[0].postcode
@@ -39,6 +39,7 @@ var options = {
   navigator.geolocation.getCurrentPosition(success, error, options)
 })
 
+<<<<<<< HEAD
 
 optionBox1.addEventListener('click', function(){
     if(radio1.checked){
@@ -51,3 +52,10 @@ optionBox1.addEventListener('click', function(){
 
     alert(radio1.checked);
 });
+=======
+window.addEventListener('unhandledrejection', function(event) {
+  // the event object has two special properties:
+  alert(event.promise); // [object Promise] - the promise that generated the error
+  alert(event.reason); // Error: Whoops! - the unhandled error object
+});
+>>>>>>> master

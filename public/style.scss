@@ -17,9 +17,11 @@ $main-container-width: 80%;
 
 $info-element-padding-top: 2rem;
 //Mobile View
+
+$fullView: 100vh;
 body {
   margin: 0;
-  height: 100vh;
+  height: $fullView;
   font-family: $main-font;
   color: $upshop-grey;
 }
@@ -111,6 +113,19 @@ textarea {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
+  a {
+  color: $upshop-grey;
+  text-decoration: none;
+  }
+
+  a:hover {
+  text-decoration: underline;
+  }
+
+  a:click {
+  text-decoration: underline;
+  }
 }
 
 .homePage__header{
@@ -127,11 +142,16 @@ textarea {
 }
 .homePage__button {
     background-color: $upshop-yellow;
-    width: 64%;
-    padding-top: 21%;
-    padding-bottom: 21%;
-    text-align: center;
+    width: 75vw;
+    height: 25vh;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+    font-size: 1.7em;
+    }
 }
 
 // search
@@ -215,6 +235,48 @@ textarea {
        font-weight: bold;
        margin-bottom: 3%;
      }
+     .moreDetails_address{
+       font-size: 1rem;
+     }s
+
+     .moreDetails__section_name{
+      background-color: #F1C373;
+      padding: 1rem;
+     }
+
+     .description__text, .comment__text{
+       background-color: $input-fill;
+       height: 5rem;
+       border: none;
+     }
+
+     .hours{
+       display: flex;
+       flex-direction: column;
+     }
+
+     .time{
+       display: flex;
+       justify-content: space-between;
+     }
+
+     .category__section{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+     }
+
+.submit{
+  display: flex;
+  justify-content: center;
+}
+.submit__btn{
+  background-color: $upshop-yellow;
+  font-family: $main-font;
+  padding: 1rem;
+  font-size: 1rem;
+  width: 10rem;
+}
 
 }
 

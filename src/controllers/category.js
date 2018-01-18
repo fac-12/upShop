@@ -4,10 +4,19 @@ const queries = require('./queries');
 
 exports.get = (req,res) => {
 
+  if(req.query.category === undefined) {
+  const err = 'You need to choose a category first!';
+  res.render('error', {
+            err,
+            layout: 'error',
+          });
+}
+
+  else {
   const cat = req.query.category;
   const currentPC = (req.query.postcode).replace(" ", "").toString();
 
-  fetch(`http://api.postcodes.io/postcodes/${currentPC}`)
+  fetch(`https://api.postcodes.io/postcodes/${currentPC}`)
     .then((response) => {
       if (response.status >= 400) {
         const errorMessage = 'This postcode does not exist';
@@ -31,4 +40,5 @@ exports.get = (req,res) => {
         layout: 'error',
     })
   });
+};
 };

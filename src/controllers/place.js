@@ -1,6 +1,15 @@
 const queries = require('./queries');
 
 exports.get = (req, res) => {
+
+    if(req.query.length === undefined) {
+  const err = 'You need to select a place first!';
+  res.render('error', {
+            err,
+            layout: 'error',
+          });
+}
+
   const placeName = req.params.place;
 
   queries
