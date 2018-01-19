@@ -20,6 +20,8 @@ else {
     lat_long: '',
   };
 
+  console.log("placeObj", placeObj);
+
   const pc = encodeURI(req.query.postcode);
 
   //Calls postcodes.io API to convert postcode into lat long

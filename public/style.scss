@@ -257,8 +257,8 @@ textarea {
 
 .optionBox {
 
-  height: 8rem;
-  width: 8rem;
+  height: 35vw;
+  width: 35vw;
   background-color: $upshop-yellow;
   margin-top: 10%;
   border-radius: $border-radius;
@@ -294,13 +294,14 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 5vh;
 
 
       button {
         background-color: $upshop-yellow;
         width: 35%;
-        margin: 5% auto;
-        padding: 3%;
+        margin: 13% auto;
+        padding: 7%;
         border: none;
 
       }
@@ -434,7 +435,7 @@ textarea {
 }
 
 .place_header {
-  height: 18%;
+  height: 18vh;
   width: 100%;
   display: table;
   background-color: $upshop-yellow;

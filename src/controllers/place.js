@@ -3,17 +3,17 @@ const queries = require('./queries');
 exports.get = (req, res) => {
 
 const placeName = req.params.place;
-console.log('The place is ', placeName);
+console.log("placeName", placeName)
 
-  queries
-    .checkPlaceExists(placeName)
-    .then((x)=> {
-      console.log(x[0].case);
-        if (x[0].case == 0) {
-          const errMessage = 'This place does not exist!';
-          throw new Error(errMessage);
+  // queries
+  //   .checkPlaceExists(placeName)
+  //   .then((x)=> {
+  //     console.log(x[0].case);
+  //       if (x[0].case == 0) {
+  //         const errMessage = 'This place does not exist!';
+  //         throw new Error(errMessage);
 
-    } else {
+  //   } else {
 
       queries
         .getPlace(placeName)
@@ -35,12 +35,12 @@ console.log('The place is ', placeName);
           })
 }
 
-})
-.catch((err)=> {
-  res.render('error', {
-            err,
-            layout: 'error',
-          });
-})
+// })
+// // .catch((err)=> {
+// //   res.render('error', {
+// //             err,
+// //             layout: 'error',
+// //           });
+// })
 
-}
+// }
