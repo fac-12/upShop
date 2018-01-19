@@ -3,7 +3,6 @@ const queries = require('./queries');
 exports.get = (req, res) => {
 
 const placeName = req.params.place;
-console.log('The place is ', placeName);
 
   queries
     .checkPlaceExists(placeName)

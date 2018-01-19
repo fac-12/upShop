@@ -10,6 +10,7 @@ const checkPlace = (formData) => {
 };
 
 const checkPlaceExists = (name) => {
+  console.log(name);
   return db.query(`
   SELECT CASE WHEN EXISTS (SELECT name FROM places WHERE name = ($1)) THEN CAST (1 AS BIT) ELSE CAST (0 AS BIT) END`, [name]);
 

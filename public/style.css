@@ -158,8 +158,8 @@ textarea {
   justify-content: space-between; }
 
 .optionBox {
-  height: 8rem;
-  width: 8rem;
+  height: 35vw;
+  width: 35vw;
   background-color: #f7d05c;
   margin-top: 10%;
   border-radius: 1.5%;
@@ -185,12 +185,13 @@ textarea {
   .choose_Category .postcode__submit__container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin: 5vh; }
     .choose_Category .postcode__submit__container button {
       background-color: #f7d05c;
       width: 35%;
-      margin: 5% auto;
-      padding: 3%;
+      margin: 13% auto;
+      padding: 7%;
       border: none; }
   .choose_Category .location_img {
     height: 40px;
@@ -219,6 +220,10 @@ textarea {
   flex-direction: column;
   height: fit-content;
   padding-bottom: 36%; }
+  .listResults a {
+    color: #494A4C;
+    font-weight: bolder;
+    text-decoration: none; }
 
 .result {
   width: 80%;
@@ -229,10 +234,6 @@ textarea {
   border-style: solid;
   border-color: #f7d05c;
   border-radius: 1.5%; }
-  .result a {
-    color: inherit;
-    font-weight: bolder;
-    text-decoration: none; }
 
 .placePage p {
   text-align: center; }
