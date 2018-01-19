@@ -355,6 +355,15 @@ textarea {
     flex-direction: column;
     height: fit-content;
     padding-bottom: 36%;
+
+
+
+  a {
+    color: $upshop-grey;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  
     }
 
 .result {
@@ -367,12 +376,6 @@ textarea {
   border-style: solid;
   border-color: $upshop-yellow;
   border-radius: $border-radius;
-
-  a {
-    color: inherit;
-    font-weight: bolder;
-    text-decoration: none;
-  }
 
 }
 

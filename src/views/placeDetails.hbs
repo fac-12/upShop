@@ -4,7 +4,7 @@
 			<h2>{{ placeResults.name }}</h2>
 	</header>
 <div class = place_details>
-	<a href="//{{placeResults.website}}" target = "_blank"><p>{{ placeResults.website }}</p></a>
+	<a href="{{placeResults.website}}" target = "_blank"><p>{{ placeResults.website }}</p></a>
 	<p>{{ placeResults.description }}</p>
 	<div class="placeAddress">
 		<img src="/assets/droppin-grey.png" class = "icon"><p>{{ placeResults.address }}</p>
@@ -12,13 +12,13 @@
 <div class="placeHours">
 	<img src="/assets/clock.png" class = "icon">
 	<div class="times">
-	<p>Monday {{listtimes placeHours.monday}}</p>
-	<p>Tuesday {{listtimes placeHours.tuesday}}</p>
-	<p>Wednesday {{listtimes placeHours.wednesday}}</p>
-	<p>Thursday {{listtimes placeHours.thursday}}</p>
-	<p>Friday {{listtimes placeHours.friday}}</p>
-	<p>Saturday {{listtimes placeHours.saturday}}</p>
-	<p>Sunday {{listtimes placeHours.sunday}}</p>
+	<p>Monday: {{listtimes placeHours.monday}}</p>
+	<p>Tuesday: {{listtimes placeHours.tuesday}}</p>
+	<p>Wednesday: {{listtimes placeHours.wednesday}}</p>
+	<p>Thursday: {{listtimes placeHours.thursday}}</p>
+	<p>Friday: {{listtimes placeHours.friday}}</p>
+	<p>Saturday: {{listtimes placeHours.saturday}}</p>
+	<p>Sunday: {{listtimes placeHours.sunday}}</p>
 	</div>
 </div>
 

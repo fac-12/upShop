@@ -220,6 +220,10 @@ textarea {
   flex-direction: column;
   height: fit-content;
   padding-bottom: 36%; }
+  .listResults a {
+    color: #494A4C;
+    font-weight: bolder;
+    text-decoration: none; }
 
 .result {
   width: 80%;
@@ -230,10 +234,6 @@ textarea {
   border-style: solid;
   border-color: #f7d05c;
   border-radius: 1.5%; }
-  .result a {
-    color: inherit;
-    font-weight: bolder;
-    text-decoration: none; }
 
 .placePage p {
   text-align: center; }
