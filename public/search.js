@@ -11,7 +11,6 @@ var radioBoxArray = Array.from(radioBoxes);
 optionBoxArray.forEach(function(box){
   box.addEventListener("click", function(e){
     e.target.parentNode.previousSibling.checked = true;
-    window.location.hash = 'getLocation';
   })
 })
 
