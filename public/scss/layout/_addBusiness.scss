@@ -1,0 +1,39 @@
+@import '../variables.scss';
+@import '../layout/fonts.scss';
+
+.addBusiness__container {
+  text-align: center;
+  display: block;
+  height: 82%;
+}
+
+.addBusiness__form {
+  width: 75%;
+  margin: auto;
+  padding-top: 22%;
+}
+
+.addBusiness__form span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.addBusiness__form input {
+  display: block;
+  margin: 7% auto;
+  padding: 4%;
+  width: 80%;
+  background-color: $upshop-grey-light;
+  font-size: 1rem;
+}
+
+.addBusiness__form .addBusiness_submit {
+  display: block;
+  padding: 6%;
+  margin-top: 15%;
+  width: 60%;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #494A4C;
+  background-color: $upshop-yellow;
+}

@@ -1,0 +1,45 @@
+@import '../variables.scss';
+@import '../layout/fonts.scss';
+
+.homePage__header {
+  height: 15%;
+}
+
+.homePage__header h1 {
+  @extend %t-align-center;
+  margin: 0;
+  padding-top: 10%;
+  line-height: 2;
+}
+
+.homePage__buttonContainer {
+  @extend %flex-wrap;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  margin: 0;
+
+  a {
+    color: $upshop-grey;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  a:click {
+    text-decoration: underline;
+  }
+}
+
+.homePage__button {
+  @extend %border-rad;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $upshop-yellow;
+  width: 75vw;
+  height: 25vh;
+  font-size: 1.8rem;
+}

@@ -1,0 +1,20 @@
+@import '../variables.scss';
+@import '../layout/fonts.scss';
+
+.placePage .place_header {
+  height: 18vh;
+  width: 100%;
+  display: table;
+  background-color: #f7d05c;
+}
+
+.placePage .place_header h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: table-cell;
+  vertical-align: middle;
+  @extend %t-align-center;
+}

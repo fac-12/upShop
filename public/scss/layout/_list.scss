@@ -1,0 +1,52 @@
+@import '../variables.scss';
+@import '../layout/fonts.scss';
+
+.listMain header {
+  height: 18vh;
+  width: 100%;
+  display: table;
+  background-color: #f7d05c;
+}
+
+.listMain header h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: table-cell;
+  vertical-align: middle;
+  @extend %t-align-center;
+}
+
+.list_img {
+  display: none;
+}
+
+.listResults {
+  display: block;
+}
+
+.result {
+  width: 80%;
+  margin: 5% auto;
+  padding: 2%;
+  font-family: "Assistant", Helvetica, sans-serif;
+  font-size: 1.2rem;
+  border-style: solid;
+  border-color: $upshop-yellow;
+  @extend %border-rad;
+}
+
+.listResults {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding-bottom: 36%;
+}
+
+.listResults a {
+  color: #494A4C;
+  font-weight: bolder;
+  text-decoration: none;
+}

@@ -1,0 +1,41 @@
+@import '../variables.scss';
+@import '../layout/fonts.scss';
+
+.addMoreDetails__container {
+  height: 82%;
+  padding-top: 5%;
+  width: 80%;
+  margin: auto;
+  height: fit-content;
+  padding-bottom: 36%;
+}
+
+.addMoreDetails__container form {
+  height: 82%;
+}
+
+.addMoreDetails__container input {
+  margin: 2%;
+}
+
+.addMoreDetails__container h3,
+.addMoreDetails__container label {
+  font-size: 1.08rem;
+  font-weight: bold;
+}
+
+.addMoreDetails__container .time input,
+.addMoreDetails__container .time label {
+  font-size: 0.96rem;
+}
+
+.addMoreDetails__container .hours {
+  width: 80%;
+  margin: auto;
+}
+
+.addMoreDetails__container .moreDetails_name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 3%;
+}

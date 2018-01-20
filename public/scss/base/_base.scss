@@ -1,0 +1,29 @@
+/* Base Styles -------------------- */
+@import '../variables.scss';
+@import '../layout/fonts.scss';
+
+body {
+  margin: 0;
+  height: 100vh;
+  @extend %upshop-font;
+  color: #494A4C;
+}
+
+.displayNone {
+  display: none;
+}
+
+input {
+  border: none;
+}
+
+textarea {
+  width: 100%;
+}
+
+
+.messageBox {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
