@@ -1,0 +1,32 @@
+@import '../variables.scss';
+@import '../layout/fonts.scss';
+
+.navHome {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 18%;
+  text-align: center;
+  border-top: 4px solid #f7d05c;
+  background-color: white;
+}
+
+.navbarMap {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 18%;
+  text-align: center;
+  border-top: 4px solid #f7d05c;
+  background-color: white;
+}
+
+.navHomeList {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 18%;
+  text-align: center;
+  border-top: 4px solid #f7d05c;
+  background-color: white;
+}

@@ -1,0 +1,17 @@
+%t-align-center {
+  text-align: center;
+}
+// display flex and center align/justify
+%flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+//auto margin left & right only
+%l-r-margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%border-rad {
+  border-radius: 5px;
+}

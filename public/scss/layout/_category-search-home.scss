@@ -1,0 +1,58 @@
+@import '../variables.scss';
+@import '../layout/fonts.scss';
+
+.category__container {
+  width: 80%;
+  margin-bottom: 10%;
+  @extend %l-r-margin-auto;
+}
+
+.category__postcode__container {
+  @extend %flex-wrap;
+  justify-content: space-between;
+  margin: 5vh;
+
+  button {
+    background-color: $upshop-yellow;
+    width: 35%;
+    margin: 13% auto;
+    padding: 7%;
+    border: none;
+    @extend %border-rad;
+  }
+}
+
+.optionBox {
+  @extend %border-rad;
+  height: 35vw;
+  width: 35vw;
+  background-color: $upshop-yellow;
+  margin-top: 10%;
+  text-align: center;
+  display: table;
+  box-sizing: border-box;
+}
+
+.category__container span {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.category__container input {
+  display: block;
+  padding: 4%;
+  background-color: $upshop-grey-light;
+  font-size: 1rem;
+  display: none;
+}
+
+.category__container .category__postcode__input {
+  display: inline;
+  width: 70%;
+}
+
+.category__form {
+  @extend %flex-wrap;
+  justify-content: space-between;
+}

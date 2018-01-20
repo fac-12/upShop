@@ -1,0 +1,347 @@
+/* Base Styles -------------------- */
+body {
+  font-family: "Assistant", Helvetica, sans-serif; }
+
+body {
+  margin: 0;
+  height: 100vh;
+  color: #494A4C; }
+
+.displayNone {
+  display: none; }
+
+input {
+  border: none; }
+
+textarea {
+  width: 100%; }
+
+.messageBox {
+  width: 80%;
+  margin: auto;
+  text-align: center; }
+
+body {
+  font-family: "Assistant", Helvetica, sans-serif; }
+
+.placePage .place_header {
+  height: 18vh;
+  width: 100%;
+  display: table;
+  background-color: #f7d05c; }
+
+.placePage .place_header h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: table-cell;
+  vertical-align: middle; }
+
+body {
+  font-family: "Assistant", Helvetica, sans-serif; }
+
+body {
+  font-family: "Assistant", Helvetica, sans-serif; }
+
+.addMoreDetails__container {
+  height: 82%;
+  padding-top: 5%;
+  width: 80%;
+  margin: auto;
+  height: fit-content;
+  padding-bottom: 36%; }
+
+.addMoreDetails__container form {
+  height: 82%; }
+
+.addMoreDetails__container input {
+  margin: 2%; }
+
+.addMoreDetails__container h3,
+.addMoreDetails__container label {
+  font-size: 1.08rem;
+  font-weight: bold; }
+
+.addMoreDetails__container .time input,
+.addMoreDetails__container .time label {
+  font-size: 0.96rem; }
+
+.addMoreDetails__container .hours {
+  width: 80%;
+  margin: auto; }
+
+.addMoreDetails__container .moreDetails_name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 3%; }
+
+body {
+  font-family: "Assistant", Helvetica, sans-serif; }
+
+.addBusiness__container {
+  text-align: center;
+  display: block;
+  height: 82%; }
+
+.addBusiness__form {
+  width: 75%;
+  margin: auto;
+  padding-top: 22%; }
+
+.addBusiness__form span {
+  font-size: 1.2rem;
+  font-weight: bold; }
+
+.addBusiness__form input {
+  display: block;
+  margin: 7% auto;
+  padding: 4%;
+  width: 80%;
+  background-color: #b7bfc8;
+  font-size: 1rem; }
+
+.addBusiness__form .addBusiness_submit {
+  display: block;
+  padding: 6%;
+  margin-top: 15%;
+  width: 60%;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #494A4C;
+  background-color: #f7d05c; }
+
+body {
+  font-family: "Assistant", Helvetica, sans-serif; }
+
+.navHome {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 18%;
+  text-align: center;
+  border-top: 4px solid #f7d05c;
+  background-color: white; }
+
+.navbarMap {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 18%;
+  text-align: center;
+  border-top: 4px solid #f7d05c;
+  background-color: white; }
+
+.navHomeList {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 18%;
+  text-align: center;
+  border-top: 4px solid #f7d05c;
+  background-color: white; }
+
+.placePage .place_header h2, .homePage__header h1, .listMain header h2 {
+  text-align: center; }
+
+.homePage__buttonContainer, .category__postcode__container, .category__form {
+  display: flex;
+  flex-wrap: wrap; }
+
+.category__container {
+  margin-left: auto;
+  margin-right: auto; }
+
+.homePage__button, .category__postcode__container button, .optionBox, .result {
+  border-radius: 5px; }
+
+body {
+  font-family: "Assistant", Helvetica, sans-serif; }
+
+.homePage__header {
+  height: 15%; }
+
+.homePage__header h1 {
+  margin: 0;
+  padding-top: 10%;
+  line-height: 2; }
+
+.homePage__buttonContainer {
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  margin: 0; }
+  .homePage__buttonContainer a {
+    color: #434a52;
+    text-decoration: none; }
+  .homePage__buttonContainer a:hover {
+    text-decoration: underline; }
+  .homePage__buttonContainer a:click {
+    text-decoration: underline; }
+
+.homePage__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7d05c;
+  width: 75vw;
+  height: 25vh;
+  font-size: 1.8rem; }
+
+body {
+  font-family: "Assistant", Helvetica, sans-serif; }
+
+.category__container {
+  width: 80%;
+  margin-bottom: 10%; }
+
+.category__postcode__container {
+  justify-content: space-between;
+  margin: 5vh; }
+  .category__postcode__container button {
+    background-color: #f7d05c;
+    width: 35%;
+    margin: 13% auto;
+    padding: 7%;
+    border: none; }
+
+.optionBox {
+  height: 35vw;
+  width: 35vw;
+  background-color: #f7d05c;
+  margin-top: 10%;
+  text-align: center;
+  display: table;
+  box-sizing: border-box; }
+
+.category__container span {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center; }
+
+.category__container input {
+  display: block;
+  padding: 4%;
+  background-color: #b7bfc8;
+  font-size: 1rem;
+  display: none; }
+
+.category__container .category__postcode__input {
+  display: inline;
+  width: 70%; }
+
+.category__form {
+  justify-content: space-between; }
+
+body {
+  font-family: "Assistant", Helvetica, sans-serif; }
+
+.listMain header {
+  height: 18vh;
+  width: 100%;
+  display: table;
+  background-color: #f7d05c; }
+
+.listMain header h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: table-cell;
+  vertical-align: middle; }
+
+.list_img {
+  display: none; }
+
+.listResults {
+  display: block; }
+
+.result {
+  width: 80%;
+  margin: 5% auto;
+  padding: 2%;
+  font-family: "Assistant", Helvetica, sans-serif;
+  font-size: 1.2rem;
+  border-style: solid;
+  border-color: #f7d05c; }
+
+.listResults {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding-bottom: 36%; }
+
+.listResults a {
+  color: #494A4C;
+  font-weight: bolder;
+  text-decoration: none; }
+
+body {
+  font-family: "Assistant", Helvetica, sans-serif; }
+
+.map {
+  height: 423px;
+  display: none; }
+
+body {
+  font-family: "Assistant", Helvetica, sans-serif; }
+
+.placePage p {
+  text-align: center; }
+
+.placePage .place_details {
+  width: 80%;
+  margin: auto;
+  height: fit-content;
+  padding-bottom: 36%; }
+
+.placePage .place_details .icon {
+  height: 30px;
+  width: auto; }
+
+.placePage .place_details .placeAddress {
+  height: 10vh;
+  display: flex;
+  align-items: center; }
+
+.placePage .place_details .placeAddress p {
+  text-align: left;
+  height: 100%;
+  margin: 0;
+  padding-top: 13%; }
+
+.placePage .place_details .placeHours {
+  display: flex; }
+
+.placePage .place_details .placeHours .times {
+  padding-top: 7%;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: left; }
+
+.placePage .place_details .placeHours .times p {
+  text-align: left;
+  margin: 0;
+  padding: 2%; }
+
+.placePage .place_details h3 {
+  text-align: center;
+  padding: 2%;
+  background-color: #f7d05c; }
+
+button {
+  color: #434a52; }
+
+.icon {
+  padding: 7%;
+  height: 70px;
+  width: auto; }
+
+.category__container .location_img {
+  height: 40px;
+  width: auto; }
+
+/*# sourceMappingURL=application.css.map */

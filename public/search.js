@@ -50,8 +50,3 @@ var options = {
 }
   navigator.geolocation.getCurrentPosition(success, error, options)
 })
-
-
-
-
-
