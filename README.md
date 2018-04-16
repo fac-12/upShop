@@ -1,64 +1,97 @@
 
 # upShop ⬆️ 
+
+## UpShop 
 [![Join the chat at https://gitter.im/upShopChat/Lobby](https://badges.gitter.im/upShopChat/Lobby.svg)](https://gitter.im/upShopChat/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-_Add value to your next purchase_
-
-_Make every purchase count_
+>_"Add value to your next purchase"_
+_"Make every purchase count"_
 
 Check out the app here: [UpShop App](https://upshop.herokuapp.com/)
+
+## MVP
+An app that allows the user to search for businesses that reflect their values as well as contribute to the upShop community by adding/editing businesses.
 
 ## To run the app
 The app has been built for smart phones.
 You can view the app by right clicking on the page and selecting 'Inspect'.
 Then toggle the device toolbar to a phone device.
 
-## MVP
-An app that allows the user to search for businesses that reflect their values as well as contribute to the upShop community by adding/editing businesses.
+<br>
 
-### App features:
-- Users to search for category or by business name
-- Options populate the map
-- Business page for each business featured
-- Business will populate the page according to users' current location or user input post code
-- Users able to add/edit businesses
-- Users able to upvote businesses
-- Users able to add comments to businesses
+## Team members
+
+[Lucy](https://github.com/lucymk) | [Lex](https://github.com/DevGrrrl) | [Caroline](https://github.com/caralemony) | [Nat](https://github.com/njseeto)
+
+<br>
+    
+## User Journey
+### Searching for a place:
+
+![gif](https://files.gitter.im/foundersandcoders/3-become-1-in-the-shower/99J4/upshop.gif)
+
+<br>
+
+### Adding a place:
+
+![gif](https://files.gitter.im/foundersandcoders/3-become-1-in-the-shower/TaRj/upshopAdd.gif)
+
+<br>
+_______________________
 
 
-### User Stories
+## Challenge/MVP
+To build an app that allows the user to search for businesses that reflect their values as well as contribute to the upShop community by adding/editing businesses.
+
+<br>
+
+## Users
 As a user I want to...
-- Find places nearby that meet certain criteria
-- Be able to search for places by category
-- Be able to see a list of businesses in my area/area selected
+
+- Be able to search for places by category and location
 - Be able to identify what values the business adheres to
-- Be able to understand what each ethical value means
-- Be able to submit a business
-- Be able to vote on businesses
-- Be able to comment on businesses
-- Be able to edit businesses
 - Navigate easily between different features on the app
-- Click on a business and have it open in GoogleMaps/Apple Map so I can go to the business
+- Find out details about individual businesses 
+- Be able to submit a business
+<br>
+______________
 
-### Tech Stack
-Express, Handlebars, Postgres, SASS, Leaflet (built on OpenStreetMap)
+## Approach
 
-### Potential Resources
-Data will be provided by users adding and editing businesses to the app.
-Businesses may also be verified through the below sources:
-- [Good Shopping Guide](http://www.thegoodshoppingguide.com/ethical-energy/)
+### Design Sprint 
+![](https://i.imgur.com/bNKzysj.png)
 
-- [Ethical Consumer](http://www.ethicalconsumer.org/)
-
-- [Living Wage Website](https://www.livingwage.org.uk/accredited-living-wage-employers)
-Provides a list of employers that pay the living wage, can sort by category.
+[Figma Design](https://www.figma.com/file/VObZ4ojbtHAThx45zj8MV36B/Untitled)
 
 
-### Prototype
-Made on Figma and Invision
-[Prototype](https://invis.io/P5F7LDVRU)
-
-### Software Architecture
 ### Schema
-![](public/assets/schema.png)
+<br>
 
+![img](public/assets/schema.png)
+ 
+ <br>
+ 
+### Build Sprint
+
+**Tech stack**
+- Node
+- Express
+- Handlebars
+- PostgreSQL
+- Leaflet
+- Sass
+
+![](https://i.imgur.com/gE3n5J8.png)
+
+
+We used milestones (ooooh) 🤩  
+The code is [here](https://github.com/fac-12/upShop) 🧐
+
+
+## Outcome
+ Things we learnt:
+- How to use Leaflet, Sass and Travis CI 
+- Passing data from hbs to front-end JS
+- Geolocation
+- Better, more specific error-handling (actually displaying a helpful page)
+- User testing was incredibly useful 
